@@ -1,33 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+import Header from './components/Header'
+import Menu from './components/Menu'
+
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header 
+        handleMenuClick={() => setMenuIsVisible(true)}
+      />
+      <Menu 
+        showMenu={menuIsVisible}
+        hideMenu={() => setMenuIsVisible(false)} 
+      />    
+
+      <section className="px-5">
+
+        {letters.map((letter, index) => (
+          <span key={index}>{letter}..........<br /></span>
+        ))}
+
+      </section>  
+
+      <section className="p-5">
+        {letters.map((letter, index) => (
+          <div key={index} className="py-5">
+            <h2 className="text-8xl">{letter}</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+        ))}
+      </section>
     </>
   )
 }
