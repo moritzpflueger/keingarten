@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import App from './App.jsx'
+import Layout from './Layout.jsx';
 import Imprint from './components/Imprint';
 import LegalNotice from './components/LegalNotice';
 import FAQ from './components/FAQ';
@@ -14,8 +15,12 @@ import FAQ from './components/FAQ';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Layout />,
     children: [
+      {
+        path: "/",
+        element: <App />,
+      },
       {
         path: "/impressum",
         element: <Imprint />,
@@ -24,12 +29,13 @@ const router = createBrowserRouter([
         path: "/legal",
         element: <LegalNotice />,
       },
+      {
+        path: "/faq",
+        element: <FAQ />,
+      }      
     ]
   },
-  {
-    path: "/faq",
-    element: <FAQ />,
-  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

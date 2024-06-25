@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-// import IconClose from './icons/IconClose';
+
+import iconClose from '../assets/iconClose.svg';
 
 const Menu = ({ showMenu, hideMenu }) => {
 
@@ -14,8 +15,7 @@ const Menu = ({ showMenu, hideMenu }) => {
               onClick={hideMenu}
               className="w-12 h-12"
             >
-              {/* <IconClose /> */}
-              x
+              <img src={iconClose} />
             </button>
           </li>
           <li className="text-xl sm:text-2xl">
@@ -23,11 +23,11 @@ const Menu = ({ showMenu, hideMenu }) => {
               Keingarten
             </Link>
           </li>
-          <li className="mt-16">
+          {/* <li className="mt-16">
             <Link to="/#about" onClick={hideMenu}>
               About
             </Link>
-          </li>
+          </li> */}
           <li className="mt-16">
             <Link to="/faq" onClick={hideMenu}>
               FAQ

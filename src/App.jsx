@@ -1,41 +1,48 @@
-import { useState } from 'react'
 import './App.css'
-
-import Header from './components/Header'
-import Menu from './components/Menu'
+import { Link } from 'react-router-dom'
+import test1 from './assets/test1.webp'
 
 function App() {
 
-  const [menuIsVisible, setMenuIsVisible] = useState(false)
-  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
-
   return (
-    <>
-      <Header 
-        handleMenuClick={() => setMenuIsVisible(true)}
-      />
-      <Menu 
-        showMenu={menuIsVisible}
-        hideMenu={() => setMenuIsVisible(false)} 
-      />    
+      <section 
+        className="
+          flex-1
+          relative
+          my-8
+          mx-4
+          font-mono
+          font-semibold
+          dotted-background
+        "
+      >
+        <div 
+          className="flex items-center justify-center w-full h-full absolute"
+        >
+          <h1 className="relative z-10 text-[clamp(2rem,_24vw,_10rem)] leading-[1.2] font-serif font-bold -translate-y-8">
+            From <br/> A to <br/> Be
+          </h1>
+          <div className="absolute">
+            <img src={test1} />
+          </div>
+        </div>
 
-      <section className="px-5">
-
-        {letters.map((letter, index) => (
-          <span key={index}>{letter}..........<br /></span>
-        ))}
+        <div className="absolute -top-1 left-0 bg-white pr-1">
+          aktuell
+        </div>
+        <div className="absolute -top-1 -right-2 bg-white px-2">
+          O1.O8.2O24-12.O8.2O24
+        </div>
+        <div className="absolute bottom-11 left-0">
+          <span className="bg-white pr-1">mit Ula Liagaite</span> <br />
+          <span className="bg-white pr-1">Tatiana Heumann</span> <br />
+          <span className="bg-white pr-1">Florencia Curci</span> <br />
+        </div>
+        <div className="absolute -bottom-1 -right-2 bg-white px-2">
+          <Link to="/impressum">weitere Informationen</Link>
+        </div>
 
       </section>  
-
-      <section className="p-5">
-        {letters.map((letter, index) => (
-          <div key={index} className="py-5">
-            <h2 className="text-8xl">{letter}</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-          </div>
-        ))}
-      </section>
-    </>
   )
 }
 
