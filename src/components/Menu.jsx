@@ -29,6 +29,11 @@ const Menu = ({ showMenu, hideMenu }) => {
             </Link>
           </li> */}
           <li className="mt-16">
+            <Link to="/registration" onClick={hideMenu}>
+              Registration
+            </Link>
+          </li>
+          <li className="mt-16">
             <Link to="/faq" onClick={hideMenu}>
               FAQ
             </Link>

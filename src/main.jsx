@@ -11,6 +11,7 @@ import Layout from './Layout.jsx';
 import Imprint from './components/Imprint';
 import LegalNotice from './components/LegalNotice';
 import FAQ from './components/FAQ';
+import Registration from './components/Registration';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/faq",
         element: <FAQ />,
+      },      
+      {
+        path: "/registration",
+        element: <Registration />,
       }      
     ]
   },

@@ -16,3 +16,17 @@
   background-position: calc(50% - 6px) calc(50% - 12px);
   pointer-events: none;
 }
+
+.react-datepicker__day--excluded {
+  color: red !important;
+  background-color: rgb(255, 207, 207) !important;
+  font-weight: bold !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--selected) {
+  color: #333 !important;
+  background-color: #eee !important;
+  font-weight: bold !important;
+  border-radius: 4px;
+}
