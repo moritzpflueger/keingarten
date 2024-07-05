@@ -1,20 +1,69 @@
-/* Add this CSS in App.css */
-.dotted-background {
-  position: relative;
-  overflow: hidden;
+@font-face {
+  font-family: 'Phase';
+  src: url('./assets/Phase-FGX_16-33-11.ttf') format('truetype-variations');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.dotted-background::before {
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: url('./assets/JetBrainsMono-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Jetbrains Mono', monospace;
+}
+
+summary {
+  @apply cursor-pointer font-bold mb-3;
+}
+
+details {
+  @apply pb-3;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+  display: none;
+}
+
+/* Create a custom checkbox appearance */
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input[type="radio"] + .checkbox-label::before {
   content: '';
   position: absolute;
-  top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle, black 1.8px, transparent 1.8px);
-  background-size: 12px 24px;
-  background-position: calc(50% - 6px) calc(50% - 12px);
-  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  /* border-radius: 3px; */
+  background-color: white;
+}
+
+/* Change the appearance of the custom checkbox when checked */
+.custom-checkbox input[type="radio"]:checked + .checkbox-label::before {
+  background-color: black;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '\2713'; /* Unicode checkmark */
+  color: white;
+}
+
+.checkbox-label {
+  font-size: 1rem;
 }
 
 .react-datepicker__day--excluded {
