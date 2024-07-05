@@ -11,7 +11,10 @@ const Header = ({ handleMenuClick }) => {
       <h1 className="text-2xl font-serif">
         <Link to="/">keingarten.xyz</Link>
       </h1>
-      <div className="flex gap-4 md:gap-32">
+      <div className="w-full sm:pl-10 sm:flex-1 col-span-2 order-last sm:order-none">
+        <WeatherWidget />
+      </div>
+      <div className="col-span-1 flex gap-4 md:gap-32 flex-1 justify-end">
         <button 
           className="w-10"
           role="button"
