@@ -1,5 +1,7 @@
+import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import WeatherWidget from './WeatherWidget';
 import iconMenu from '../assets/iconMenu.svg';
 import iconCircle from '../assets/iconCircle.svg';
 import iconSquare from '../assets/iconSquare.svg';
