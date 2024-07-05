@@ -59,6 +59,11 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
         className="h-full top-0 left-0 absolute bg-[lime] mix-blend-multiply" 
         style={{ width: `${scrollPosition}%` }}
       />
+      <h1 
+        className="text-3xl font-serif col-span-1"
+        style={{ fontFamily: 'Phase' }}
+      >
+        <Link to="/">keingarten</Link>
       </h1>
       <div className="w-full sm:pl-10 sm:flex-1 col-span-2 order-last sm:order-none">
         <WeatherWidget />
