@@ -9,6 +9,7 @@ const Registration = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [hasAllergies, setHasAllergies] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
 
   const fetchUrl = 'https://script.google.com/macros/s/AKfycbx8CoAqhjGb1RySj8HbGtxCPRz78WOCgMbxOSPAn3Gq-x5AmPMXD2ecKLj0hxC0p6NIVQ/exec';
@@ -61,6 +62,7 @@ const Registration = () => {
         name,
         email,
         phone,
+        hasAllergies,
         timeslot: formattedDate,
       }),
     });
@@ -73,18 +75,17 @@ const Registration = () => {
   };
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <div className="w-[60%] aspect-[2/3] flex justify-center items-center animate-pulse bg-neutral-100">Loading...</div>;
   }
 
   return (
-    <section className="p-10">
-      <h1 className="font-serif text-5xl my-5">Register for Summer School</h1>
-      <p className="text-2xl mb-10">July 01 — August 31</p>
+    <section className="">
       <form onSubmit={handleSubmit} className="mb-10">
-        <div>
+        <div className="mb-2">
           <label>
             Name:
             <input
+              className="border-b border-black"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -92,10 +93,11 @@ const Registration = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="mb-2">
           <label>
             Email:
             <input
+              className="border-b border-black"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -103,10 +105,11 @@ const Registration = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="mb-2">
           <label>
             Phone:
             <input
+              className="border-b border-black"
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
@@ -114,7 +117,32 @@ const Registration = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="mb-2">
+          <label>
+            Allergies:
+            <label className="custom-checkbox ml-3">
+              <input
+                type="radio"
+                value="true"
+                checked={hasAllergies === true}
+                onChange={(e) => setHasAllergies(true)}
+                required
+              />   
+                <span className="checkbox-label">Yes</span>           
+            </label>
+            <label className="custom-checkbox ml-3">
+              <input
+                type="radio"
+                value="false"
+                checked={hasAllergies === false}
+                onChange={(e) => setHasAllergies(false)}
+                required
+              />
+              <span className="checkbox-label">No</span>           
+            </label>
+          </label>
+        </div>
+        <div className="mb-2">
           <label>
             Date: {selectedDate ? selectedDate.toLocaleDateString('de-DE', {
               year: 'numeric',
@@ -141,7 +169,7 @@ const Registration = () => {
             inline
           />
         </div>
-        <button type="submit" className="px-3 py-1 text-white mt-2 bg-blue-400 rounded-md">
+        <button type="submit" className="px-5 py-3 text-white mt-2 bg-black">
           Book Slot
         </button>
       </form>
