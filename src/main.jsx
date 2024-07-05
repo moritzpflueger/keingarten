@@ -6,12 +6,13 @@ import {
   RouterProvider
 } from 'react-router-dom';
 
-import App from './App.jsx'
+import App from './App.jsx';
 import Layout from './Layout.jsx';
 import Imprint from './components/Imprint';
 import LegalNotice from './components/LegalNotice';
 import FAQ from './components/FAQ';
 import Registration from './components/Registration';
+import Programme from './components/Programme';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration />,
+      },      
+      {
+        path: "/programme",
+        element: <Programme />,
       }      
     ]
   },
