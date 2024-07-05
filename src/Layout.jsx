@@ -8,11 +8,16 @@ import { Outlet } from 'react-router-dom'
 function App() {
 
   const [menuIsVisible, setMenuIsVisible] = useState(false)
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   return (
-    <div className="min-h-[100dvh] flex flex-col">
+    <div 
+      className="min-h-[100dvh] flex flex-col"
+      style={{ paddingTop: `${headerHeight + 16}px`}}
+    >
       <Header 
         handleMenuClick={() => setMenuIsVisible(true)}
+        onHeightChange={(height) => setHeaderHeight(height)}
       />
       <Menu 
         showMenu={menuIsVisible}
