@@ -9,7 +9,7 @@ const Menu = ({ showMenu, hideMenu }) => {
   return (
     <nav className={`fixed flex items-start justify-between w-full z-50`}>
       <div className="h-[100dvh]">
-        <ul className="fixed w-full flex flex-col items-center gap-0 px-10 py-6 text-4xl sm:text-5xl top-0 left-0 bg-white z-20 max-h-[100dvh] overflow-y-auto">
+        <ul className="fixed w-full flex flex-col items-center gap-0 px-10 py-6 text-4xl sm:text-5xl top-0 left-0 bg-white z-20 max-h-[100dvh] overflow-y-auto border-b-4 border-black">
           <li className="absolute top-3 right-1">
             <button 
               onClick={hideMenu}
@@ -18,32 +18,30 @@ const Menu = ({ showMenu, hideMenu }) => {
               <img src={iconClose} />
             </button>
           </li>
-          <li className="text-xl sm:text-2xl">
+          <li 
+            className="text-2xl sm:text-4xl py-10"
+            style={{ fontFamily: 'Phase' }}
+          >
             <Link to="/" onClick={hideMenu}>
               Keingarten
             </Link>
           </li>
-          {/* <li className="mt-16">
-            <Link to="/#about" onClick={hideMenu}>
-              About
-            </Link>
-          </li> */}
-          <li className="mt-16">
-            <Link to="/registration" onClick={hideMenu}>
-              Registration
+          <li className="mt-16 hover:underline">
+            <Link to="/programme" onClick={hideMenu}>
+              Programme
             </Link>
           </li>
-          <li className="mt-16">
+          <li className="mt-16 hover:underline">
             <Link to="/faq" onClick={hideMenu}>
               FAQ
             </Link>
           </li>
           <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5 flex-wrap">
-            <Link to="/impressum" onClick={hideMenu}>
+            <Link to="/impressum" onClick={hideMenu} className="hover:underline">
               Impressum
             </Link>
             /
-            <Link to="/legal" onClick={hideMenu}>
+            <Link to="/legal" onClick={hideMenu} className="hover:underline">
               Legal Notice
             </Link>
           </li>
