@@ -45,10 +45,12 @@ const Registration = () => {
         }),
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.result === 'success') {
         alert('Booking successful');
       } else {
-        alert('Error booking slot');
+        alert(`Error booking slot: ${result.message}`);
       }
     } catch (error) {
       alert('Error booking slot');
