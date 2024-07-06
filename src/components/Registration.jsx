@@ -1,82 +1,59 @@
-import React, { useEffect, useState } from 'react';
-import DatePicker from 'react-datepicker';
+import React, { useState } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
+import DatePicker from './DatePicker';
 
 const Registration = () => {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [hasAllergies, setHasAllergies] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(null);
-
-  const fetchUrl = 'https://script.google.com/macros/s/AKfycbx8CoAqhjGb1RySj8HbGtxCPRz78WOCgMbxOSPAn3Gq-x5AmPMXD2ecKLj0hxC0p6NIVQ/exec';
-
-  const unavailableDates = data
-    .filter(item => item.id && item.status !== 'available')
-    .map(item => {
-      return {
-        date: new Date(item.date),
-        message: "already booked"
-      }
-    });  
-
-  useEffect(() => {
-    console.log('selectedDate1',selectedDate)
-  }, [selectedDate]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetch(fetchUrl);
-      const { data } = await response.json();
-      setData(data);
-      setIsLoading(false);
-      console.log(data)
-      console.log('unavailableDates', unavailableDates)
-    }
-    fetchData();
-  }, []);
-
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!selectedDate) {
+    if (!startDate && !endDate) {
       alert('Please select a timeslot.');
       return;
     }
 
     // Convert the selected date to a local date string in the Berlin timezone
     const berlinTimezoneOffset = -120; // Berlin is UTC+2 during daylight saving time
-    const localDate = new Date(selectedDate.getTime() - (berlinTimezoneOffset * 60 * 1000));
-    const formattedDate = localDate.toISOString().split('T')[0]; // Extract the date part    
+    const localStartDate = new Date(startDate.getTime() - (berlinTimezoneOffset * 60 * 1000));
+    const localEndDate = new Date(endDate.getTime() - (berlinTimezoneOffset * 60 * 1000));
+    const formattedStartDate = localStartDate.toISOString().split('T')[0]; // Extract the date part    
+    const formattedEndDate = localEndDate.toISOString().split('T')[0]; // Extract the date part    
 
-    const response = await fetch(fetchUrl, {
-      method: 'POST',
-      redirect: 'follow',
-      headers: {
-        'Content-Type': 'text/plain;charset=utf-8',
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        phone,
-        hasAllergies,
-        timeslot: formattedDate,
-      }),
-    });
+    
+    try {
+      const appScriptsEndpointUrl = 'https://script.google.com/macros/s/AKfycbx8CoAqhjGb1RySj8HbGtxCPRz78WOCgMbxOSPAn3Gq-x5AmPMXD2ecKLj0hxC0p6NIVQ/exec';
+      const response = await fetch(appScriptsEndpointUrl, {
+        method: 'POST',
+        redirect: 'follow',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          hasAllergies,
+          startDate: formattedStartDate,
+          endDate: formattedEndDate,
+        }),
+      });
 
-    if (response.ok) {
-      alert('Booking successful');
-    } else {
+      if (response.ok) {
+        alert('Booking successful');
+      } else {
+        alert('Error booking slot');
+      }
+    } catch (error) {
       alert('Error booking slot');
     }
   };
-
-  if (isLoading) {
-    return <div className="w-[60%] aspect-[2/3] flex justify-center items-center animate-pulse bg-neutral-100">Loading...</div>;
-  }
 
   return (
     <section className="">
@@ -142,33 +119,15 @@ const Registration = () => {
             </label>
           </label>
         </div>
-        <div className="mb-2">
-          <label>
-            Date: {selectedDate ? selectedDate.toLocaleDateString('de-DE', {
-              year: 'numeric',
-              month: '2-digit',
-              day: '2-digit',
-              weekday: 'long',
-            }) : 'Please select date below'}
-          </label>
-        </div>
-        <div>
-          <DatePicker
-            selected={selectedDate}
-            onChange={date => {
-              console.log('selectedDate2', date.toISOString());
-              setSelectedDate(date);
-            }}
-            filterDate={(date) => {
-              const month = date.getMonth();
-              return month === 6 || month === 7; // Filter dates in July or August
-            }}
-            excludeDates={unavailableDates}
-            placeholderText="Select an available date"
-            dateFormat="yyyy-MM-dd"
-            inline
-          />
-        </div>
+        <DatePicker 
+          startDate={startDate}
+          endDate={endDate}
+          handleDateChange={(dates) => {
+            const [start, end] = dates;
+            setStartDate(start);
+            setEndDate(end);
+          }}
+        />
         <button type="submit" className="px-5 py-3 text-white mt-2 bg-black">
           Book Slot
         </button>

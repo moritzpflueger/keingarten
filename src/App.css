@@ -67,15 +67,31 @@ input[type="radio"] {
 }
 
 .react-datepicker__day--excluded {
-  color: red !important;
-  background-color: rgb(255, 207, 207) !important;
-  font-weight: bold !important;
-  border-radius: 4px;
+  position: relative;
+  /* color: red !important; */
+  /* background-color: rgb(255, 207, 207) !important; */
+  /* font-weight: bold !important; */
+  /* border-radius: 4px; */
+}
+.react-datepicker__day--excluded:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: 'X';
+  /* color: #a3a3a3; */
+  color: red;
+  font-size: 0.75em;
+  /* padding: 0.25em; */
+  /* border-radius: 50%; */
+  /* transform: translate(50%, -50%); */
+
 }
 
 .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--selected) {
-  color: #333 !important;
-  background-color: #eee !important;
-  font-weight: bold !important;
-  border-radius: 4px;
+  /* color:  ; */
+  /* background-color: #eee ; */
+  font-weight: bold ;
+  /* border-radius: 4px; */
 }
