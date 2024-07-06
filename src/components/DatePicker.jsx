@@ -16,15 +16,11 @@ const DatePicker = ({ startDate, endDate, handleDateChange }) => {
       }
     });  
 
-  // useEffect(() => {
-  //   console.log('startDate1',startDate)
-  //   console.log('endDate1',endDate)
-  // }, [startDate, endDate]);
-
   useEffect(() => {
     async function fetchData() {
+      const params = 'sheet=Timeslots';
       const appScriptsEndpointUrl = 'https://script.google.com/macros/s/AKfycbx8CoAqhjGb1RySj8HbGtxCPRz78WOCgMbxOSPAn3Gq-x5AmPMXD2ecKLj0hxC0p6NIVQ/exec';
-      const response = await fetch(appScriptsEndpointUrl);
+      const response = await fetch(`${appScriptsEndpointUrl}?${params}`);
       const { data } = await response.json();
       setData(data);
       setIsLoading(false);
