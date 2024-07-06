@@ -17,10 +17,10 @@ function App() {
             >
               <span className="pr-3">From A <br/> to Be</span>
               <div className="inline-flex whitespace-nowrap">
-                <Link to ="/" className="mx-3 w-16">
+                <Link to ="/faq" className="mx-3 w-16">
                   <IconQuestionmark />
                 </Link>
-                <Link to ="/" className="mx-3 w-16">
+                <Link to ="/programme" className="mx-3 w-16">
                   <IconInfo />
                 </Link>                
               </div>
