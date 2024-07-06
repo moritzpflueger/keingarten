@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import GardenStatus from './GardenStatus';
 import WeatherWidget from './WeatherWidget';
 import iconMenu from '../assets/iconMenu.svg';
-import iconCircle from '../assets/iconCircle.svg';
-import iconSquare from '../assets/iconSquare.svg';
+import IconImage from './IconImage';
+import IconFile from './IconFile';
 
 const Header = ({ handleMenuClick, onHeightChange }) => {
 
@@ -67,24 +68,17 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
       >
         <Link to="/">keingarten</Link>
       </h1>
-      <div className="w-full sm:pl-10 sm:flex-1 col-span-2 order-last sm:order-none">
+      <div className="w-full sm:pl-10 sm:flex-1 col-span-2 order-last sm:order-none flex items-center">
         <WeatherWidget />
+        <GardenStatus />
       </div>
       <div className="col-span-1 flex gap-4 md:gap-32 flex-1 justify-end">
-        <button 
-          className="w-10"
-          role="button"
-          onClick={() => alert('Layout by Square View (WiP)')}
-        >
-          <img src={iconSquare} className="w-full md:rotate-90" />
-        </button>
-        <button 
-          className="w-10"
-          role="button"
-          onClick={() => alert('Layout by Circle View (WiP)')}
-        >
-          <img src={iconCircle} className="w-full" />
-        </button>
+        <Link to="/" className="w-9 text-neutral-500">
+          <IconFile />
+        </Link>
+        <Link to="/" className="w-10">
+          <IconImage />
+        </Link>
         <button 
           className="w-10"
           role="button"
