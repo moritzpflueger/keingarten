@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import DatePicker from './DatePicker';
+import { useTranslation} from 'react-i18next';
 
 const Registration = () => {
 
+  const { t } = useTranslation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -62,7 +64,7 @@ const Registration = () => {
       <form onSubmit={handleSubmit} className="mb-10">
         <div className="mb-2">
           <label>
-            Name:
+            {t('registration.name.label')}:
             <input
               className="border-b border-black"
               type="text"
@@ -74,7 +76,7 @@ const Registration = () => {
         </div>
         <div className="mb-2">
           <label>
-            Email:
+            {t('registration.email.label')}:
             <input
               className="border-b border-black"
               type="email"
@@ -86,7 +88,7 @@ const Registration = () => {
         </div>
         <div className="mb-2">
           <label>
-            Phone:
+            {t('registration.phone.label')}:
             <input
               className="border-b border-black"
               type="tel"
@@ -98,7 +100,7 @@ const Registration = () => {
         </div>
         <div className="mb-2">
           <label>
-            Allergies:
+            {t('registration.allergies.label')}:
             <label className="custom-checkbox ml-3">
               <input
                 type="radio"
@@ -107,7 +109,9 @@ const Registration = () => {
                 onChange={(e) => setHasAllergies(true)}
                 required
               />   
-                <span className="checkbox-label">Yes</span>           
+                <span className="checkbox-label">
+                  {t('registration.allergies.yes')}:  
+                </span>           
             </label>
             <label className="custom-checkbox ml-3">
               <input
@@ -117,7 +121,9 @@ const Registration = () => {
                 onChange={(e) => setHasAllergies(false)}
                 required
               />
-              <span className="checkbox-label">No</span>           
+              <span className="checkbox-label">
+                {t('registration.allergies.no')}:  
+              </span>           
             </label>
           </label>
         </div>
@@ -131,7 +137,7 @@ const Registration = () => {
           }}
         />
         <button type="submit" className="px-5 py-3 text-white mt-2 bg-black">
-          Book Slot
+          {t('registration.submitButton')}  
         </button>
       </form>
     </section>

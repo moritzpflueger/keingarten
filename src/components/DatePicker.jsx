@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDatePicker from 'react-datepicker';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const DatePicker = ({ startDate, endDate, handleDateChange }) => {
 
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
+  const { t } = useTranslation();
 
   const unavailableDates = data
     .filter(item => item.id && item.status !== 'available')
@@ -38,7 +40,7 @@ const DatePicker = ({ startDate, endDate, handleDateChange }) => {
     <div>
       <div className="mb-2">
         <label className="">
-          <span className="">Date(s): </span>
+          <span className="">{ t('registration.dates.label') }: </span>
           <span className="font-bold underline">
             {startDate 
               ? startDate.toLocaleDateString('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit' }) 
@@ -46,7 +48,7 @@ const DatePicker = ({ startDate, endDate, handleDateChange }) => {
               + (endDate && endDate.getDate() !== startDate.getDate() 
                 ? endDate.toLocaleDateString('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit' })
                 : '')
-              : 'Select select a date below'
+              : t('registration.dates.placeholder')
             }              
           </span>
         </label>
