@@ -7,13 +7,125 @@
   "resources": {
     "en": {
       "translation": {
-        "Welcome to React": "Welcome to React and react-i18next",
+        "heroDescription": "Workshops with <1>Ula Liagaite</1>, <br/><3>AnttoLogy</3>, <5>Tatiana Heumann</5> <br/> and <7>Florencia Curci</7>",
+        "gardenStatus": {
+          "open": "Open",
+          "closed": "Closed"
+        },
+        "menu": {
+          "program": "Programme",
+          "faq": "FAQ",
+          "impressum": "Imprint",
+          "legal": "Legal Notice"
+        },
+        "registration": {
+          "name": {
+            "label": "Name"
+          },
+          "email": {
+            "label": "Email"
+          },
+          "phone": {
+            "label": "Phone"
+          },
+          "allergies": {
+            "label": "Allergies",
+            "yes": "Yes",
+            "no": "No"
+          },
+          "dates": {
+            "label": "Date(s)",
+            "placeholder": "Choose one or more dates below"
+          },
+          "submitButton": "Book Slot"
+        },
+        "faq": {
+          "text1": "Frequently asked questions are listed below. Please feel free to contact any time if something is unclear to you?",
+          "text2": "Please let us know if you need help accessing the garden. We provide a pick up for older or disabled persons.",
+          "items": [
+            {
+              "question": "How to get there?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            },
+            {
+              "question": "Wheelchar Accessibilit?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            },
+            {
+              "question": "Taking Care?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            },
+            {
+              "question": "Staying overnight?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            }
+          ]
+        },
+        "program": {
+          "infoText": "No previous movement or dance experience needed. Bring comfy clothes and footwear, a notebook and a pen."
+        },        
         "title": "My name is Moritz"
       }
     },
     "de": {
       "translation": {
-        "Welcome to React": "Willkommen bei React und react-i18next",
+        "heroDescription": "Workshops mit <1>Ula Liagaite</1>, <br/><3>AnttoLogy</3>, <5>Tatiana Heumann</5> <br/> und <7>Florencia Curci</7>",
+        "gardenStatus": {
+          "open": "Geöffnet",
+          "closed": "Geschlossen"
+        },
+        "menu": {
+          "program": "Programm",
+          "faq": "FAQ",
+          "impressum": "Impressum",
+          "legal": "Rechtliches"
+        },
+        "registration": {
+          "name": {
+            "label": "Name"
+          },
+          "email": {
+            "label": "Email"
+          },
+          "phone": {
+            "label": "Telefon"
+          },
+          "allergies": {
+            "label": "Allergien",
+            "yes": "Ja",
+            "no": "Nein"
+          },
+          "dates": {
+            "label": "Tag(e)",
+            "placeholder": "Wähle einen oder mehrere Tage"
+          },
+          "submitButton": "Slot Buchen"
+        },
+        "faq": {
+          "text1": "Häufig gestellte Fragen sind unten aufgeführt. Bitte zögern Sie nicht, uns jederzeit zu kontaktieren, wenn etwas unklar ist?",
+          "text2": "Bitte lassen Sie uns wissen, wenn Sie Hilfe beim Zugang zum Garten benötigen. Wir bieten einen Abholservice für ältere oder behinderte Personen an.",
+          "items": [
+            {
+              "question": "Wie komme ich hin?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            },
+            {
+              "question": "Rollstuhlzugänglichkeit?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            },
+            {
+              "question": "Betreuung?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            },
+            {
+              "question": "Übernachtung?",
+              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            }
+          ]
+        },
+        "program": {
+          "infoText": "Keine vorherige Bewegungs- oder Tanzerfahrung erforderlich. Bring bequeme Kleidung und Schuhe, ein Notizbuch und einen Stift mit."
+        },
         "title": "Mein Name ist Moritz"
       }
     }
