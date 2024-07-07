@@ -1,11 +1,16 @@
 import './App.css'
 import { Link } from 'react-router-dom'
-import test1 from './assets/test1.webp'
 import Registration from './components/Registration'
 import IconQuestionmark from './components/IconQuestionmark'
 import IconInfo from './components/IconInfo'
+import { useTranslation, Trans } from 'react-i18next'
 
 function App() {
+
+  const { t, i18n } = useTranslation()
+
+  const formattedStartDate = new Date('2024-08-01').toLocaleDateString(i18n.language)
+  const formattedEndDate = new Date('2024-08-12').toLocaleDateString(i18n.language)
 
   return (
       <section>
@@ -25,11 +30,15 @@ function App() {
                 </Link>                
               </div>
             </h1>
-            <p className="text-2xl my-10">01.08.2024 - 12.08.2024</p>
+            <p className="text-2xl my-10">
+              { formattedStartDate } - { formattedEndDate}
+            </p>
             <p className="text-2xl">
-              Workshops with <Link className="whitespace-nowrap underline" to="/">Ula Liagaite</Link>, 
-              <br/><Link className="whitespace-nowrap underline" to="/">AnttoLogy</Link>, <Link className="whitespace-nowrap underline" to="/">Tatiana Heumann</Link> 
-              <br/> and <Link className="whitespace-nowrap underline" to="/">Florencia Curci</Link>
+              <Trans i18nKey="heroDescription">
+                Workshops with <Link className="whitespace-nowrap underline" to="/">Ula Liagaite</Link>, 
+                <Link className="whitespace-nowrap underline" to="/">AnttoLogy</Link>, <Link className="whitespace-nowrap underline" to="/">Tatiana Heumann</Link> 
+                and <Link className="whitespace-nowrap underline" to="/">Florencia Curci</Link>
+              </Trans>
             </p>
           </div>
           <div className="col-span-1 flex justify-start mt-3">
