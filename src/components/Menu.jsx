@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import iconClose from '../assets/iconClose.svg';
 
 const Menu = ({ showMenu, hideMenu }) => {
 
   if (!showMenu) return null;
+  const { t } = useTranslation();
 
   return (
     <nav className={`fixed flex items-start justify-between w-full z-50`}>
@@ -28,21 +30,21 @@ const Menu = ({ showMenu, hideMenu }) => {
           </li>
           <li className="mt-16 hover:underline">
             <Link to="/programme" onClick={hideMenu}>
-              Programme
+              {t('menu.program')}
             </Link>
           </li>
           <li className="mt-16 hover:underline">
             <Link to="/faq" onClick={hideMenu}>
-              FAQ
+              {t('menu.faq')}
             </Link>
           </li>
           <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5 flex-wrap">
             <Link to="/impressum" onClick={hideMenu} className="hover:underline">
-              Impressum
+              {t('menu.impressum')}
             </Link>
             /
             <Link to="/legal" onClick={hideMenu} className="hover:underline">
-              Legal Notice
+              {t('menu.legal')}
             </Link>
           </li>
         </ul>   
