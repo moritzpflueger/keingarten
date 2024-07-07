@@ -35,7 +35,6 @@ const WeatherWidget = () => {
         href={`https://forecast7.com/${i18n.language}/48d819d16/stuttgart-feuerbach/`} 
         data-font="Monaco"
         data-mode="Current"
-        data-language={i18n.language}
         style={{ display: 'block', width: '100%', height: '100%' }}
       >
         Stuttgart, Feuerbach, Germany
