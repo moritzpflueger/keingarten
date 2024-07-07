@@ -76,7 +76,7 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
         {/* <Link to="/" className="w-9 text-neutral-500">
           <IconFile />
         </Link> */}
-        <Link to="/images" className="w-10">
+        <Link to="/images" title="Image Gallery" className="w-10">
           <IconImage />
         </Link>
         <button 
