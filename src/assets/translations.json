@@ -13,7 +13,9 @@
           "closed": "Closed"
         },
         "menu": {
-          "program": "Programme",
+          "about": "About",
+          "contact": "Contact",
+          "program": "Program",
           "faq": "FAQ",
           "impressum": "Imprint",
           "legal": "Legal Notice"
@@ -79,6 +81,8 @@
           "closed": "Geschlossen"
         },
         "menu": {
+          "about": "Über",
+          "contact": "Kontakt",
           "program": "Programm",
           "faq": "FAQ",
           "impressum": "Impressum",

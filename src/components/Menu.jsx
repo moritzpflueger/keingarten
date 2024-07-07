@@ -29,13 +29,23 @@ const Menu = ({ showMenu, hideMenu }) => {
             </Link>
           </li>
           <li className="mt-16 hover:underline">
-            <Link to="/programme" onClick={hideMenu}>
+            <Link to="/about" onClick={hideMenu}>
+              {t('menu.about')}
+            </Link>
+          </li>
+          <li className="mt-16 hover:underline">
+            <Link to="/program" onClick={hideMenu}>
               {t('menu.program')}
             </Link>
           </li>
           <li className="mt-16 hover:underline">
             <Link to="/faq" onClick={hideMenu}>
               {t('menu.faq')}
+            </Link>
+          </li>
+          <li className="mt-16 hover:underline">
+            <Link to="/contact" onClick={hideMenu}>
+              {t('menu.contact')}
             </Link>
           </li>
           <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5 flex-wrap">
@@ -45,6 +55,11 @@ const Menu = ({ showMenu, hideMenu }) => {
             /
             <Link to="/legal" onClick={hideMenu} className="hover:underline">
               {t('menu.legal')}
+            </Link>
+            /
+            <Link to="/" onClick={hideMenu} className="hover:underline">
+              {/* {t('menu.legal')} */}
+              logos?
             </Link>
           </li>
         </ul>   

@@ -8,12 +8,16 @@ const FAQ = () => {
   const faq = t('faq.items', { returnObjects: true });
 
   return (
-    <section className="p-5 max-w-3xl">
+    <section className=" p-5 mx-auto max-w-4xl">
       <h1 
-        className="font-serif text-7xl my-5"
+        className="font-serif text-7xl my-10"
         style={{ fontFamily: 'Phase' }}
       >
-        <span className="pr-3">From A to Be</span>
+        <span className="pr-3">
+          Frequently
+          <br/>Asked
+          <br/>Questions
+        </span>
       </h1>
       <div className="flex flex-col gap-5">
         <div className="flex gap-5">

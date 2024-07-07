@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div 
-      className="min-h-[100dvh] flex flex-col"
+      className="flex flex-col"
       style={{ paddingTop: `${headerHeight}px`}}
     >
       <Header 
@@ -26,7 +26,12 @@ function App() {
       />
       
       <LanguageSelector className="p-5 " />    
-      <Outlet />
+      <div className="min-h-screen">
+        <Outlet />
+      </div>
+      <div class="bg-black text-white p-10">
+        <p>© 2024 Keingarten</p>
+      </div>
     </div>
   )
 }

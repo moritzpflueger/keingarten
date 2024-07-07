@@ -1,6 +1,6 @@
 const ImageView = () => {
   return (
-    <div className="h-[200vh] -mt-16">
+    <div className="h-[200vh] -mt-32">
       <iframe 
         style={{border:'none'}}
         width="100%" 

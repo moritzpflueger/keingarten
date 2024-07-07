@@ -10,10 +10,10 @@ const Programme = () => {
   return (
     <section className="p-5 mx-auto max-w-4xl">
       <h1 
-        className="font-serif text-8xl my-5"
+        className="font-serif text-8xl my-10"
         style={{ fontFamily: 'Phase' }}
       >
-        <span className="pr-3">From A to Be</span>
+        <span className="pr-3">Summer Program</span>
       </h1>
       <div className="flex flex-col gap-5">
         <div className="flex items-center gap-5">

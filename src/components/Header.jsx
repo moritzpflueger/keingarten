@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import GardenStatus from './GardenStatus';
 import WeatherWidget from './WeatherWidget';
 import iconMenu from '../assets/iconMenu.svg';
-import IconImage from './IconImage';
-import IconFile from './IconFile';
+import IconSquare from './IconSquare';
+// import IconImage from './IconImage';
+// import IconFile from './IconFile';
 
 const Header = ({ handleMenuClick, onHeightChange }) => {
 
@@ -77,7 +78,8 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
           <IconFile />
         </Link> */}
         <Link to="/images" title="Image Gallery" className="w-10">
-          <IconImage />
+          {/* <IconImage /> */}
+          <IconSquare />
         </Link>
         <button 
           className="w-10"

@@ -23,7 +23,7 @@ useEffect(() => {
   if (isLoading) return;
 
   return (
-    <div className="flex items-center justify-center gap-10 flex-1 pr-5">
+    <div className="flex items-center justify-center gap-6 flex-1 pr-5">
       <div className={`ml-auto w-10 h-10 rounded-full  ${data.status === 'open' ? 'bg-[lime]' : 'bg-[red]'}`} />
       <p className="text-sm font-semibold">{ t(`gardenStatus.${data.status}`)}</p>
     </div>
