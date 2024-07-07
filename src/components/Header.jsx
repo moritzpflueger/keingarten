@@ -73,10 +73,10 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
         <GardenStatus />
       </div>
       <div className="col-span-1 flex gap-4 md:gap-32 flex-1 justify-end">
-        <Link to="/" className="w-9 text-neutral-500">
+        {/* <Link to="/" className="w-9 text-neutral-500">
           <IconFile />
-        </Link>
-        <Link to="/" className="w-10">
+        </Link> */}
+        <Link to="/images" className="w-10">
           <IconImage />
         </Link>
         <button 

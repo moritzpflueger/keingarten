@@ -13,7 +13,7 @@ function App() {
   return (
     <div 
       className="min-h-[100dvh] flex flex-col"
-      style={{ paddingTop: `${headerHeight + 16}px`}}
+      style={{ paddingTop: `${headerHeight}px`}}
     >
       <Header 
         handleMenuClick={() => setMenuIsVisible(true)}

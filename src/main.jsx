@@ -13,6 +13,7 @@ import LegalNotice from './components/LegalNotice';
 import FAQ from './components/FAQ';
 import Registration from './components/Registration';
 import Programme from './components/Programme';
+import ImageView from './components/ImageView';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/programme",
         element: <Programme />,
+      },      
+      {
+        path: "/images",
+        element: <ImageView />,
       }      
     ]
   },
