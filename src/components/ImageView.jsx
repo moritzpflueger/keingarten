@@ -6,7 +6,7 @@ const ImageView = () => {
         width="100%" 
         height="100%" 
         src="https://www.are.na/ludwig-lederer/from-a-to-be/embed" 
-        title="Gemma Copeland’s Are.na channel “Internet Explorers”">
+        title="Keingarten Image Gallery">
       </iframe>      
     </div>
   )
