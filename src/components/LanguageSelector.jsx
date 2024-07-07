@@ -18,6 +18,7 @@ const LanguageSelector = ({ className }) => {
     <div className={`flex space-x-4 ${className}`}>
       {languages.map((language) => (
         <button
+          key={language.code}
           onClick={() => changeLanguage(language.code)}
           className={`${currentLanguage === language.code ? 'no-underline' : 'underline'}`}
         >
