@@ -1,7 +1,12 @@
 import IconInfo from "./IconInfo";
 import IconQuestionmark from "./IconQuestionmark";
+import { useTranslation } from "react-i18next";
 
 const FAQ = () => {
+
+  const { t } = useTranslation();
+  const faq = t('faq.items', { returnObjects: true });
+
   return (
     <section className="p-5 max-w-3xl">
       <h1 
@@ -15,32 +20,22 @@ const FAQ = () => {
           <div className="w-20">
             <IconQuestionmark />
           </div>
-          <p>Frequently asked questions are listed below. Please feel free to contact any time if something is unclear to you?</p>
+          <p>{ t('faq.text1') }</p>
         </div>
         <div className="flex gap-5">
           <div className="w-20">
             <IconInfo />
           </div>
-          <p>Please let us know if you need help accessing the garden. We provide a pick up for older or disabled persons.</p>
+          <p>{ t('faq.text2') }</p>
         </div>
       </div>
       <div className="px-1 mt-5">
+      {faq.map((item) => (
         <details>
-          <summary>How to get there?</summary>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </details>
-        <details>
-          <summary>Wheelchar Accessibility?</summary>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </details>
-        <details>
-          <summary>Taking Care?</summary>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <summary>{ item.question }</summary>
+          <p>{ item.answer }</p>
         </details>        
-        <details>
-          <summary>Staying overnight?</summary>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </details>        
+      ))}
       </div>
       
     </section>
