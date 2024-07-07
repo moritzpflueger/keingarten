@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const GardenStatus = () => {
 
   const [data, setData]= useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const { t } = useTranslation();
 
 useEffect(() => {
     async function fetchData() {
@@ -22,8 +24,8 @@ useEffect(() => {
 
   return (
     <div className="flex items-center justify-center gap-10 flex-1 pr-5">
-      <div className={`ml-auto w-10 h-10 rounded-full  ${data.status=== 'Open' ? 'bg-[lime]' : 'bg-[red]'}`} />
-      <p className="text-sm font-semibold">{ data.status }</p>
+      <div className={`ml-auto w-10 h-10 rounded-full  ${data.status === 'open' ? 'bg-[lime]' : 'bg-[red]'}`} />
+      <p className="text-sm font-semibold">{ t(`gardenStatus.${data.status}`)}</p>
     </div>
   );
 }
