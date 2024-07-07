@@ -9,6 +9,7 @@ const Registration = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [numberOfGuests, setNumberOfGuests] = useState(1);
   const [hasAllergies, setHasAllergies] = useState(false);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
@@ -42,6 +43,7 @@ const Registration = () => {
           email,
           phone,
           hasAllergies,
+          numberOfGuests,
           startDate: formattedStartDate,
           endDate: formattedEndDate,
         }),
@@ -66,7 +68,7 @@ const Registration = () => {
           <label>
             {t('registration.name.label')}:
             <input
-              className="border-b border-black"
+              className="border-b border-black px-3"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -78,7 +80,7 @@ const Registration = () => {
           <label>
             {t('registration.email.label')}:
             <input
-              className="border-b border-black"
+              className="border-b border-black px-3"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -90,10 +92,24 @@ const Registration = () => {
           <label>
             {t('registration.phone.label')}:
             <input
-              className="border-b border-black"
+              className="border-b border-black px-3"
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </label>
+        </div>
+        <div className="mb-2">
+          <label>
+            {t('registration.numberOfGuests.label')}:
+            <input
+              className="border-b border-black px-3"
+              type="number"
+              min="1"
+              max="7"
+              value={numberOfGuests}
+              onChange={(e) => setNumberOfGuests(e.target.value)}
               required
             />
           </label>
@@ -136,7 +152,7 @@ const Registration = () => {
             setEndDate(end);
           }}
         />
-        <button type="submit" className="px-5 py-3 text-white mt-2 bg-black">
+        <button type="submit" className="px-5 py-3 text-white mt-5 bg-black">
           {t('registration.submitButton')}  
         </button>
       </form>

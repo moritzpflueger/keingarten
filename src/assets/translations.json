@@ -28,6 +28,9 @@
           "phone": {
             "label": "Phone"
           },
+          "numberOfGuests": {
+            "label": "Number of Guests"
+          },
           "allergies": {
             "label": "Allergies",
             "yes": "Yes",
@@ -35,7 +38,8 @@
           },
           "dates": {
             "label": "Date(s)",
-            "placeholder": "Choose one or more dates below"
+            "placeholder": "Choose one or more dates below",
+            "helpText": "(7) = Amount of remaining slots"
           },
           "submitButton": "Book Slot"
         },
@@ -90,6 +94,9 @@
           "phone": {
             "label": "Telefon"
           },
+          "numberOfGuests": {
+            "label": "Anzahl der Gäste"
+          },
           "allergies": {
             "label": "Allergien",
             "yes": "Ja",
@@ -97,7 +104,8 @@
           },
           "dates": {
             "label": "Tag(e)",
-            "placeholder": "Wähle einen oder mehrere Tage"
+            "placeholder": "Wähle einen oder mehrere Tage",
+            "helpText": "(7) = Anzahl der übrigen Plätze"
           },
           "submitButton": "Slot Buchen"
         },
