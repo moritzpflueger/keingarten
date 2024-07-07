@@ -1,32 +1,48 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const WeatherWidget = () => {
+  const { i18n } = useTranslation();
 
   useEffect(() => {
-  !function(d,s,id) {
-    var js,fjs=d.getElementsByTagName(s)[0];
-    if (!d.getElementById(id)) {
-      js=d.createElement(s);
-      js.id=id;
-      js.src='https://weatherwidget.io/js/widget.min.js';
-      fjs.parentNode.insertBefore(js,fjs);
-    }
-  }(document,'script','weatherwidget-io-js');
-  }, []);
+    const loadScript = () => {
+      const existingScript = document.getElementById('weatherwidget-io-js');
+      if (existingScript) {
+        existingScript.remove();
+      }
+
+      const script = document.createElement('script');
+      script.id = 'weatherwidget-io-js';
+      script.src = 'https://weatherwidget.io/js/widget.min.js';
+      document.body.appendChild(script);
+    };
+
+    loadScript();
+
+    // Cleanup function to remove the script when the component unmounts or language changes
+    return () => {
+      const script = document.getElementById('weatherwidget-io-js');
+      if (script) {
+        script.remove();
+      }
+    };
+  }, [i18n.language]);
 
   return (
     <div className="max-h-20 relative w-56 scale-75 -translate-x-12 -translate-y-3 sm:translate-y-0">
       <a 
         className="weatherwidget-io" 
-        href="https://forecast7.com/en/48d819d16/stuttgart-feuerbach/" 
+        href={`https://forecast7.com/${i18n.language}/48d819d16/stuttgart-feuerbach/`} 
         data-font="Monaco"
         data-mode="Current"
+        data-language={i18n.language}
         style={{ display: 'block', width: '100%', height: '100%' }}
       >
-        {/* Stuttgart, Feuerbach, Germany */}
+        Stuttgart, Feuerbach, Germany
       </a>      
       <div className="absolute w-full h-full top-0 left-0"></div>
     </div>
   );
-}
+};
+
 export default WeatherWidget;
