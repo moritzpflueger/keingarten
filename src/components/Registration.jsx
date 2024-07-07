@@ -126,7 +126,7 @@ const Registration = () => {
                 required
               />   
                 <span className="checkbox-label">
-                  {t('registration.allergies.yes')}:  
+                  {t('registration.allergies.yes')}
                 </span>           
             </label>
             <label className="custom-checkbox ml-3">
@@ -138,7 +138,7 @@ const Registration = () => {
                 required
               />
               <span className="checkbox-label">
-                {t('registration.allergies.no')}:  
+                {t('registration.allergies.no')}
               </span>           
             </label>
           </label>
