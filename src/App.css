@@ -47,7 +47,6 @@ input[type="radio"] {
   width: 20px;
   height: 20px;
   border: 2px solid black;
-  /* border-radius: 3px; */
   background-color: white;
 }
 
@@ -76,10 +75,6 @@ input[type="radio"] {
 
 .react-datepicker__day--excluded {
   position: relative;
-  /* color: red !important; */
-  /* background-color: rgb(255, 207, 207) !important; */
-  /* font-weight: bold !important; */
-  /* border-radius: 4px; */
 }
 .react-datepicker__day--excluded:after {
   position: absolute;
@@ -87,19 +82,11 @@ input[type="radio"] {
   left: 0;
   right: 0;
   margin: 0 auto;
-  content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23aaa' stroke-width='1' %3E%3Cline x1='18' y1='6' x2='6' y2='18' /%3E%3Cline x1='6' y1='6' x2='18' y2='18' /%3E%3C/svg%3E");
-  /* color: #a3a3a3; */
-  color: red;
+  content: '—';
   font-size: 0.75em;
-  /* padding: 0.25em; */
-  /* border-radius: 50%; */
-  /* transform: translate(50%, -50%); */
 
 }
 
 .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--selected) {
-  /* color:  ; */
-  /* background-color: #eee ; */
   font-weight: bold ;
-  /* border-radius: 4px; */
 }
