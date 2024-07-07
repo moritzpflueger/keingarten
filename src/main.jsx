@@ -5,6 +5,9 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom';
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import translations from './assets/translations.json'
 
 import App from './App.jsx';
 import Layout from './Layout.jsx';
@@ -14,6 +17,10 @@ import FAQ from './components/FAQ';
 import Registration from './components/Registration';
 import Programme from './components/Programme';
 import ImageView from './components/ImageView';
+
+i18n
+  .use(initReactI18next)
+  .init(translations)
 
 const router = createBrowserRouter([
   {

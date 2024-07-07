@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import './App.css'
+import { Outlet } from 'react-router-dom'
 
 import Header from './components/Header'
 import Menu from './components/Menu'
-import { Outlet } from 'react-router-dom'
+import LanguageSelector from './components/LanguageSelector'
 
 function App() {
 
@@ -22,7 +23,9 @@ function App() {
       <Menu 
         showMenu={menuIsVisible}
         hideMenu={() => setMenuIsVisible(false)} 
-      />    
+      />
+      
+      <LanguageSelector className="p-5 " />    
       <Outlet />
     </div>
   )

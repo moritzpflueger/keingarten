@@ -1,0 +1,21 @@
+{
+  "lng": "en",
+  "fallbackLng": "en",
+  "interpolation": {
+    "escapeValue": false
+  },  
+  "resources": {
+    "en": {
+      "translation": {
+        "Welcome to React": "Welcome to React and react-i18next",
+        "title": "My name is Moritz"
+      }
+    },
+    "de": {
+      "translation": {
+        "Welcome to React": "Willkommen bei React und react-i18next",
+        "title": "Mein Name ist Moritz"
+      }
+    }
+  }
+}
