@@ -60,12 +60,12 @@ const DatePicker = ({ startDate, endDate, handleDateChange }) => {
   }, []);  
 
   if (isLoading) {
-    return <div className="">Loading...</div>;
+    return <div className="bg-neutral-100 p-20 mt-6">Loading...</div>;
   }
     
   return (
     <div>
-      <div className="mb-2">
+      <div className="mb-6">
         <label className="">
           <span className="">{ t('registration.dates.label') }: </span>
           <span className="font-bold underline">
