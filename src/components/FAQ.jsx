@@ -8,7 +8,7 @@ const FAQ = () => {
   const faq = t('faq.items', { returnObjects: true });
 
   return (
-    <section className=" p-5 mx-auto max-w-4xl">
+    <section id="faq" className="p-5 pb-20 mx-auto max-w-4xl">
       <h1 
         className="font-serif text-7xl my-10"
         style={{ fontFamily: 'Phase' }}

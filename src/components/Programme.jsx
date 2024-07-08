@@ -8,7 +8,7 @@ const Programme = () => {
   const { t } = useTranslation();
   
   return (
-    <section className="p-5 mx-auto max-w-4xl">
+    <section id="program" className="p-5 mx-auto max-w-4xl">
       <h1 
         className="font-serif text-8xl my-10"
         style={{ fontFamily: 'Phase' }}

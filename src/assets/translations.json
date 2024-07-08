@@ -15,6 +15,7 @@
         "menu": {
           "about": "About",
           "contact": "Contact",
+          "registration": "Registration",
           "program": "Program",
           "faq": "FAQ",
           "impressum": "Imprint",
@@ -83,6 +84,7 @@
         "menu": {
           "about": "Über",
           "contact": "Kontakt",
+          "registration": "Anmeldung",
           "program": "Programm",
           "faq": "FAQ",
           "impressum": "Impressum",

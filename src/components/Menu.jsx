@@ -34,12 +34,17 @@ const Menu = ({ showMenu, hideMenu }) => {
             </Link>
           </li>
           <li className="mt-16 hover:underline">
-            <Link to="/program" onClick={hideMenu}>
+            <Link to="/#registration" onClick={hideMenu}>
+              {t('menu.registration')}
+            </Link>
+          </li>
+          <li className="mt-16 hover:underline">
+            <Link to="/#program" onClick={hideMenu}>
               {t('menu.program')}
             </Link>
           </li>
           <li className="mt-16 hover:underline">
-            <Link to="/faq" onClick={hideMenu}>
+            <Link to="/#faq" onClick={hideMenu}>
               {t('menu.faq')}
             </Link>
           </li>
