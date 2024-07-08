@@ -5,8 +5,6 @@ import GardenStatus from './GardenStatus';
 import WeatherWidget from './WeatherWidget';
 import iconMenu from '../assets/iconMenu.svg';
 import IconSquare from './IconSquare';
-// import IconImage from './IconImage';
-// import IconFile from './IconFile';
 
 const Header = ({ handleMenuClick, onHeightChange }) => {
 
@@ -57,7 +55,7 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
   return (
     <header 
       ref={headerRef}
-      className="fixed top-0 bg-white grid grid-cols-2 sm:flex sm:items-center sm:justify-between p-5 pb-0 sm:pb-5 border-b-4 border-black w-full"
+      className="fixed z-50 top-0 bg-white grid grid-cols-2 sm:flex sm:items-center sm:justify-between p-5 pb-0 sm:pb-5 border-b-4 border-black w-full"
     >
       <div
         className="h-full top-0 left-0 absolute bg-[lime] mix-blend-multiply" 
@@ -74,15 +72,11 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
         <GardenStatus />
       </div>
       <div className="col-span-1 flex gap-4 md:gap-32 flex-1 justify-end">
-        {/* <Link to="/" className="w-9 text-neutral-500">
-          <IconFile />
-        </Link> */}
-        <Link to="/images" title="Image Gallery" className="w-10">
-          {/* <IconImage /> */}
+        <Link to="/images" title="Image Gallery" className="w-10 z-50">
           <IconSquare />
         </Link>
         <button 
-          className="w-10"
+          className="w-10 z-50"
           role="button"
           onClick={handleMenuClick}
         >
