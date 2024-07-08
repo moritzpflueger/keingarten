@@ -28,9 +28,9 @@ const Programme = () => {
 
       {new Array(10).fill().map((item, index) => (
       <article key={`program_${index}`}>
-        <p className="mt-5">
+        <p className="mt-5 text-xl">
           <strong> 01.08.2024 - 07.08.2024,</strong> daily between 16:00-18:00h
-          <br/><i>A move towards a fiction of coexistence</i>
+          <br/><i className="font-semibold">A move towards a fiction of coexistence</i>
           <br/>with <Link className="whitespace-nowrap underline">Ula Liagaite</Link> and <Link className="whitespace-nowrap underline">AnttoLogy</Link>
         </p>
         <p
