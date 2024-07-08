@@ -14,6 +14,7 @@ import Layout from './Layout.jsx';
 import Imprint from './components/Imprint';
 import LegalNotice from './components/LegalNotice';
 import FAQ from './components/FAQ';
+import About from './components/About';
 import Registration from './components/Registration';
 import Programme from './components/Programme';
 import ImageView from './components/ImageView';
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/images",
         element: <ImageView />,
+      },      
+      {
+        path: "/about",
+        element: <About />,
       }      
     ]
   },
