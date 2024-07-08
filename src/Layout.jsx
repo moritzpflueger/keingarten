@@ -3,6 +3,7 @@ import './App.css'
 import { Outlet } from 'react-router-dom'
 
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Menu from './components/Menu'
 import LanguageSelector from './components/LanguageSelector'
 
@@ -29,9 +30,7 @@ function App() {
       <div className="min-h-screen">
         <Outlet />
       </div>
-      <div class="bg-black text-white p-10">
-        <p>© 2024 Keingarten</p>
-      </div>
+      <Footer />
     </div>
   )
 }
