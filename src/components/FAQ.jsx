@@ -24,7 +24,7 @@ const FAQ = () => {
         <InfoBox 
           type="question"
           id="faq-question"
-          place="right"
+          place="top"
         >
           <Trans i18nKey={'faq.tooltip.question'}>
             For the duration of your participation you can either <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link> or register for the <Link className="font-bold underline" to="/#program">daily activities</Link>.
@@ -33,7 +33,7 @@ const FAQ = () => {
         <InfoBox 
           type="info"
           id="faq-info"
-          place="right"
+          place="top"
         >
           <Trans i18nKey={'faq.tooltip.info'}>
             If you want to <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link>, please bring a tent and camping equipment to enjoy your stay at the <Link className="font-bold underline" to="/about">keingarten</Link>.
