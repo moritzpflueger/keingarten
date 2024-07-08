@@ -13,9 +13,22 @@ const Registration = () => {
   const [hasAllergies, setHasAllergies] = useState(false);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const resetForm = () => {
+    setName('');
+    setEmail('');
+    setPhone('');
+    setNumberOfGuests(1);
+    setHasAllergies(false);
+    setStartDate(null);
+    setEndDate(null);
+  };
   
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    setIsSubmitting(true);
 
     if (!startDate && !endDate) {
       alert('Please select a timeslot.');
@@ -51,9 +64,11 @@ const Registration = () => {
       });
 
       const result = await response.json();
+      setIsSubmitting(false);
 
       if (result.result === 'success') {
         alert('Booking successful');
+        resetForm();
       } else {
         alert(`Error booking slot: ${result.message}`);
       }
@@ -153,8 +168,16 @@ const Registration = () => {
             setEndDate(end);
           }}
         />
-        <button type="submit" className="px-5 py-3 text-white mt-5 bg-black">
-          {t('registration.submitButton')}  
+        <button 
+          id="submit-button"
+          disabled={isSubmitting}
+          type="submit" 
+          className="px-5 py-3 text-white mt-5 bg-black w-2/3 h-12"
+        >
+          {isSubmitting 
+          ? <span className="loading-dots mx-auto scale-150"></span>
+          : t('registration.submitButton')
+          }
         </button>
       </form>
     </section>
