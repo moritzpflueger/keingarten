@@ -28,32 +28,32 @@ const Menu = ({ showMenu, hideMenu }) => {
               Keingarten
             </Link>
           </li>
-          <li className="mt-16 hover:underline">
+          <li className="mt-8 sm:mt-16 hover:underline">
             <Link to="/about" onClick={hideMenu}>
               {t('menu.about')}
             </Link>
           </li>
-          <li className="mt-16 hover:underline">
+          <li className="mt-8 sm:mt-16 hover:underline">
             <Link to="/#registration" onClick={hideMenu}>
               {t('menu.registration')}
             </Link>
           </li>
-          <li className="mt-16 hover:underline">
+          <li className="mt-8 sm:mt-16 hover:underline">
             <Link to="/#program" onClick={hideMenu}>
               {t('menu.program')}
             </Link>
           </li>
-          <li className="mt-16 hover:underline">
+          <li className="mt-8 sm:mt-16 hover:underline">
             <Link to="/#faq" onClick={hideMenu}>
               {t('menu.faq')}
             </Link>
           </li>
-          <li className="mt-16 hover:underline">
+          <li className="mt-8 sm:mt-16 hover:underline">
             <Link to="/contact" onClick={hideMenu}>
               {t('menu.contact')}
             </Link>
           </li>
-          <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5 flex-wrap">
+          <li className="mt-8 sm:mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5 flex-wrap">
             <Link to="/impressum" onClick={hideMenu} className="hover:underline">
               {t('menu.impressum')}
             </Link>
