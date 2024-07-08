@@ -10,7 +10,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-[lime] p-10">
+    <footer className="bg-[lime] p-10 font-semibold">
       <div className="flex flex-col">
         <Link to={'/about'} className="hover:underline">{ t('menu.about') }</Link>
         <Link to={'/#registration'} className="hover:underline">{ t('menu.registration') }</Link>
@@ -39,8 +39,8 @@ const Footer = () => {
           <img src={LogoTNC} alt="LHS Logo" className="w-full" />
         </a>
       </div>      
-      <div class="flex justify-end">
-        <p>© {new Date().getFullYear()} Keingarten</p>
+      <div class="flex justify-end font-bold">
+        © {new Date().getFullYear()} Keingarten
       </div>
     </footer>
   );
