@@ -71,6 +71,16 @@
         "program": {
           "infoText": "No previous movement or dance experience needed. Bring comfy clothes and footwear, a notebook and a pen."
         },        
+        "about": {
+          "title": "About",
+          "text": "The keingarten project aims to provide access to a natural area and enable people without their own garden to participate in its design. The project promotes practical implementations for climate adaptation and opportunities for sustainable consumption. An former garden house on an agricultural land in Stuttgart-Feuerbach serves as a real-life laboratory. In this space, collective experiments and participatory projects can be carried out to develop concepts and test ideas on the 5349 square meter natural area. The keingarten project aims to collaborate with stakeholders and residents of Stuttgart to design future scenarios for the currently unused land. Based on these collective experiments, projects and products will be created that promote local cycles and engage in knowledge exchange with a global community. The project will start in the summer of 2024 with workshops and a summer school focusing on environmental sciences, art, and architecture. From 2025 onwards, educational programs will be offered for families. The project aims to establish long-term access to the unused land, which can be utilized by local initiatives and groups by mutual agreement."
+        },
+        "imprint": {
+          "title": "Imprint"
+        },
+        "legal": {
+          "title": "Disclaimer for Keingarten"
+        },
         "title": "My name is Moritz"
       }
     },
@@ -139,6 +149,16 @@
         },
         "program": {
           "infoText": "Keine vorherige Bewegungs- oder Tanzerfahrung erforderlich. Bring bequeme Kleidung und Schuhe, ein Notizbuch und einen Stift mit."
+        },
+        "about": {
+          "title": "Über",
+          "text": "Das Projekt keingarten setzt sich dafür ein, dass auch Personen, die über keinen eigenen Garten verfügen, Zugang zu einer Naturfläche bekommen und an deren Gestaltung mitwirken können. Praktische Umsetzungen zur Klimafolgenanpassung und Möglichkeiten für einen nachhaltigen Konsum sollen in dem Projekt gefördert werden. Auf einer landwirtschaftlichen Nutzfläche in Stuttgart-Feuerbach wird ein ehemaliges Gartenhaus zum Reallabor. In diesem können in kollektiven Experimenten und partizipativen Projekten Konzepte entwickelt und Ideen auf der 5349qm großen Naturfläche erprobt werden. Das Projekt keingarten strebt an, gemeinsam mit AkteurInnen und EinwohnerInnen der Stadt Stuttgart Zukunftsszenarien für die aktuell brachliegende Fläche zu entwerfen. Ausgehend von den gemeinsamen Experimenten sollen Projekte und Produkte entstehen, die lokale Kreisläufe fördern und im Wissensaustausch mit einer globalen Gemeinschaft stehen. Für den Start des Projekts im Sommer 2024 finden Workshops und eine Summer School mit Inhalten aus dem Umweltwissenschaften, der Kunst sowie der Architektur statt. Ab 2025 wird es Bildungsangebote für Familien geben. Das Projekt soll den langfristigen Zugang zu der ungenutzten Fläche herstellen, die Fläche kann hierfür von lokalen Initiativen und Gruppen nach Absprache genutzt werden."
+        },
+        "imprint": {
+          "title": "Impressum"
+        },
+        "legal": {
+          "title": "Haftungsausschluss für Keingarten"
         },
         "title": "Mein Name ist Moritz"
       }
