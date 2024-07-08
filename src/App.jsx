@@ -40,7 +40,7 @@ function App() {
         <div className="py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="col-span-1">
             <h1 
-              className="font-serif text-7xl"
+              className="font-serif text-8xl"
               style={{ fontFamily: 'Phase, serif' }}
             >
               From A <br/> to Be
@@ -49,7 +49,7 @@ function App() {
               <InfoBox 
                 type="question"
                 id="registration-question"
-                place="right"
+                place="top"
               >
                 <Trans i18nKey="registration.tooltip.question">
                   The program is free of charge. Please book a slot to participate. For more questions please see the <Link className="font-bold underline" to="/#faq">FAQ</Link> or <Link className="font-bold underline" to="/contact">Contact Us</Link> directly.
@@ -58,7 +58,7 @@ function App() {
               <InfoBox 
                 type="info"
                 id="registration-info"
-                place="right"
+                place="top"
               >
                 <Trans i18nKey="registration.tooltip.info">
                   No previous movement or dance experience needed. Bring comfy clothes and footwear, a notebook and a pen.
@@ -76,7 +76,7 @@ function App() {
               </Trans>
             </p>
           </div>
-          <div className="col-span-1 flex justify-start mt-3">
+          <div className="col-span-1 flex justify-start mt-5">
             <Registration />
           </div>
         </div>
