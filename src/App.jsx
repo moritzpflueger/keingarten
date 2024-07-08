@@ -59,9 +59,9 @@ function App() {
             </p>
             <p className="text-2xl">
               <Trans i18nKey="heroDescription">
-                Workshops with <Link className="whitespace-nowrap underline" to="/">Ula Liagaite</Link>, 
-                <Link className="whitespace-nowrap underline" to="/">AnttoLogy</Link>, <Link className="whitespace-nowrap underline" to="/">Tatiana Heumann</Link> 
-                and <Link className="whitespace-nowrap underline" to="/">Florencia Curci</Link>
+                Workshops with <a className="whitespace-nowrap underline" href="https://www.muenchner-kammerspiele.de/de/wir/13127-ula-liagait" target="_blank">Ula Liagaite</a>, 
+                AnttoLogy, <a className="whitespace-nowrap underline" href="https://www.tatianaheuman.com/" target="_blank">Tatiana Heumann</a> 
+                and <a className="whitespace-nowrap underline" href="https://florenciacurci.com/" target="_blank">Florencia Curci</a>
               </Trans>
             </p>
           </div>
