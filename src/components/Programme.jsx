@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
-import IconInfo from "./IconInfo";
+import InfoBox from "./InfoBox";
 
 const Programme = () => {
   
@@ -10,20 +10,30 @@ const Programme = () => {
   return (
     <section id="program" className="p-5 mx-auto max-w-4xl">
       <h1 
-        className="font-serif text-8xl my-10"
+        className="font-serif text-6xl sm:text-7xl my-10"
         style={{ fontFamily: 'Phase' }}
       >
         <span className="pr-3">Summer Program</span>
       </h1>
-      <div className="flex flex-col gap-5">
-        <div className="flex items-center gap-5">
-          <div className="w-20">
-            <IconInfo />
-          </div>
-          <p>
-            { t('program.infoText') }
-          </p>
-        </div>
+      <div className="flex gap-3 mt-5 mb-16">
+        <InfoBox 
+          type="question"
+          id="program-question"
+          place="right"
+        >
+          <Trans i18nKey="program.tooltip.question">
+            For the duration of your <Link className="font-bold underline" to="/#registration">participation</Link> you can either stay at the garden over night or come during the <Link className="font-bold underline" to="/#program">daily activities</Link>.
+          </Trans>
+        </InfoBox>
+        <InfoBox 
+          type="info"
+          id="program-info"
+          place="right"
+        >
+          <Trans i18nKey="program.tooltip.info">
+            If you want to <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link>, please bring a tent and camping equipment to enjoy your stay at the <Link className="font-bold underline" to="/about">keingarten</Link>.
+          </Trans>
+        </InfoBox>              
       </div>
 
       {new Array(10).fill().map((item, index) => (

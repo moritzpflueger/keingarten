@@ -6,8 +6,7 @@ import { useTranslation, Trans } from 'react-i18next'
 import Registration from './components/Registration'
 import Programme from './components/Programme'
 import FAQ from './components/FAQ'
-import IconQuestionmark from './components/IconQuestionmark'
-import IconInfo from './components/IconInfo'
+import InfoBox from './components/InfoBox'
 
 function App() {
 
@@ -44,16 +43,28 @@ function App() {
               className="font-serif text-7xl"
               style={{ fontFamily: 'Phase, serif' }}
             >
-              <span className="pr-3">From A <br/> to Be</span>
-              <div className="inline-flex whitespace-nowrap">
-                <Link to ="/faq" className="mx-3 w-16">
-                  <IconQuestionmark />
-                </Link>
-                <Link to ="/program" className="mx-3 w-16">
-                  <IconInfo />
-                </Link>                
-              </div>
+              From A <br/> to Be
             </h1>
+            <div className="flex gap-3 mt-5">
+              <InfoBox 
+                type="question"
+                id="registration-question"
+                place="right"
+              >
+                <Trans i18nKey="registration.tooltip.question">
+                  The program is free of charge. Please book a slot to participate. For more questions please see the <Link className="font-bold underline" to="/#faq">FAQ</Link> or <Link className="font-bold underline" to="/contact">Contact Us</Link> directly.
+                </Trans>
+              </InfoBox>
+              <InfoBox 
+                type="info"
+                id="registration-info"
+                place="right"
+              >
+                <Trans i18nKey="registration.tooltip.info">
+                  No previous movement or dance experience needed. Bring comfy clothes and footwear, a notebook and a pen.
+                </Trans>
+              </InfoBox>              
+            </div>
             <p className="text-2xl my-10">
               { formattedStartDate } - { formattedEndDate}
             </p>

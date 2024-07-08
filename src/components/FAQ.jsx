@@ -1,6 +1,7 @@
-import IconInfo from "./IconInfo";
-import IconQuestionmark from "./IconQuestionmark";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
+import InfoBox from "./InfoBox";
 
 const FAQ = () => {
 
@@ -10,7 +11,7 @@ const FAQ = () => {
   return (
     <section id="faq" className="p-5 pb-20 mx-auto max-w-4xl">
       <h1 
-        className="font-serif text-7xl my-10"
+        className="font-serif text-6xl sm:text-7xl my-10"
         style={{ fontFamily: 'Phase' }}
       >
         <span className="pr-3">
@@ -19,24 +20,30 @@ const FAQ = () => {
           <br/>Questions
         </span>
       </h1>
-      <div className="flex flex-col gap-5">
-        <div className="flex gap-5">
-          <div className="w-20">
-            <IconQuestionmark />
-          </div>
-          <p>{ t('faq.text1') }</p>
-        </div>
-        <div className="flex gap-5">
-          <div className="w-20">
-            <IconInfo />
-          </div>
-          <p>{ t('faq.text2') }</p>
-        </div>
+      <div className="flex gap-3 mt-5 mb-16">
+        <InfoBox 
+          type="question"
+          id="faq-question"
+          place="right"
+        >
+          <Trans i18nKey={'faq.tooltip.question'}>
+            For the duration of your participation you can either <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link> or register for the <Link className="font-bold underline" to="/#program">daily activities</Link>.
+          </Trans>
+        </InfoBox>
+        <InfoBox 
+          type="info"
+          id="faq-info"
+          place="right"
+        >
+          <Trans i18nKey={'faq.tooltip.info'}>
+            If you want to <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link>, please bring a tent and camping equipment to enjoy your stay at the <Link className="font-bold underline" to="/about">keingarten</Link>.
+          </Trans>
+        </InfoBox>              
       </div>
       <div className="px-1 mt-5">
       {faq.map((item) => (
         <details>
-          <summary>{ item.question }</summary>
+          <summary className="text-xl">{ item.question }</summary>
           <p>{ item.answer }</p>
         </details>        
       ))}
