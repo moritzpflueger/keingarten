@@ -84,7 +84,17 @@ input[type="radio"] {
   margin: 0 auto;
   content: '—';
   font-size: 0.75em;
+}
+.react-datepicker__day--selected,
+.react-datepicker__day--in-range {
+  background-color: lime !important;
+  opacity: 1 !important;
+  color: black !important;
+}
 
+.react-datepicker__day--keyboard-selected {
+  background-color: lime;
+  opacity: 0.5;
 }
 
 .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--selected) {
