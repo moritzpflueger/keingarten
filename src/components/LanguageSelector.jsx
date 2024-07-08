@@ -20,7 +20,7 @@ const LanguageSelector = ({ className }) => {
         <button
           key={language.code}
           onClick={() => changeLanguage(language.code)}
-          className={`${currentLanguage === language.code ? 'no-underline' : 'underline'}`}
+          className={`${currentLanguage === language.code ? 'no-underline font-bold' : 'underline'}`}
         >
           { language.name }
         </button>
