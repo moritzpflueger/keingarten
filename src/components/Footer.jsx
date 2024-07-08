@@ -17,11 +17,6 @@ const Footer = () => {
         <Link to={'/#program'} className="hover:underline">{ t('menu.program') }</Link>
         <Link to={'/#faq'} className="hover:underline">{ t('menu.faq') }</Link>
         <Link to={'/contact'} className="hover:underline">{ t('menu.contact') }</Link>
-        <a href="https://www.instagram.com/keingartenxyz/" target="_blank" className="mt-10">
-          <img src={iconInstagram} alt="Instagram" className="w-10" />   
-        </a>        
-        <Link to="/impressum" className="hover:underline mt-10">impressum</Link>
-        <Link to="/legal" className="hover:underline">legal notice</Link>
       </div>
       <div className='flex flex-wrap gap-20 w-full my-10'>
         <a 
@@ -39,8 +34,15 @@ const Footer = () => {
           <img src={LogoTNC} alt="LHS Logo" className="w-full" />
         </a>
       </div>      
-      <div class="flex justify-end font-bold">
-        © {new Date().getFullYear()} Keingarten
+      <div class="flex flex-col md:flex-row md:items-center md:gap-10">
+        <a href="https://www.instagram.com/keingartenxyz/" target="_blank" className="mb-5 md:mb-0">
+          <img src={iconInstagram} alt="Instagram" className="w-10" />   
+        </a>        
+        <Link to="/impressum" className="hover:underline">impressum</Link>
+        <Link to="/legal" className="hover:underline">legal notice</Link>        
+        <div className="md:ml-auto mt-10 md:mt-0">
+          © {new Date().getFullYear()} Keingarten
+        </div>
       </div>
     </footer>
   );
