@@ -31,7 +31,8 @@ const Registration = () => {
 
     
     try {
-      const appScriptsEndpointUrl = 'https://script.google.com/macros/s/AKfycbx8CoAqhjGb1RySj8HbGtxCPRz78WOCgMbxOSPAn3Gq-x5AmPMXD2ecKLj0hxC0p6NIVQ/exec';
+      const deploymentId = 'AKfycbzwko6rg5GRCTlQyFSomcQ_KpIeaoXX3Obx546pzl-Dcx-a5untal0-aTsCQuwczpRJ';
+      const appScriptsEndpointUrl = `https://script.google.com/macros/s/${deploymentId}/exec`;
       const response = await fetch(appScriptsEndpointUrl, {
         method: 'POST',
         redirect: 'follow',
