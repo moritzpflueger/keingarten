@@ -62,7 +62,7 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
         style={{ width: `${scrollPosition}%` }}
       />
       <h1 
-        className="text-3xl font-serif col-span-1"
+        className="z-50 text-3xl font-serif col-span-1"
         style={{ fontFamily: 'Phase' }}
       >
         <Link to="/">keingarten</Link>
