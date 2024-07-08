@@ -38,11 +38,11 @@ function App() {
   return (
     <div>
       <section id="registration" className="p-5 mx-auto max-w-4xl pb-20">
-        <div className="p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="col-span-1">
             <h1 
               className="font-serif text-7xl"
-              style={{ fontFamily: 'Phase' }}
+              style={{ fontFamily: 'Phase, serif' }}
             >
               <span className="pr-3">From A <br/> to Be</span>
               <div className="inline-flex whitespace-nowrap">
