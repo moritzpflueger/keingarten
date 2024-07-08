@@ -1,10 +1,13 @@
-// import IconInfo from "./IconInfo";
-// import IconQuestionmark from "./IconQuestionmark";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
 
   const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);  
 
   return (
     <section id="faq" className="p-5 pb-20 mx-auto max-w-4xl">
