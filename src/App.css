@@ -1,14 +1,26 @@
 @font-face {
   font-family: 'Phase';
-  src: url('./assets/Phase-FGX_16-33-11.ttf') format('truetype-variations');
+  src: url('./assets/fonts/Phase-AGX_0-0-50.ttf') format('truetype-variations');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Jetbrains Mono';
-  src: url('./assets/JetBrainsMono-Medium.woff2') format('woff2');
-  font-weight: normal;
+  src: url('./assets/fonts/JetBrainsMono-Light.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: url('./assets/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: url('./assets/fonts/JetBrainsMono-Medium.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
 }
 
