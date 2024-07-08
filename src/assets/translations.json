@@ -90,6 +90,9 @@
         "legal": {
           "title": "Disclaimer for Keingarten"
         },
+        "contact": {
+          "title": "Contact"
+        },
         "title": "My name is Moritz"
       }
     },
@@ -177,6 +180,9 @@
         },
         "legal": {
           "title": "Haftungsausschluss für Keingarten"
+        },
+        "contact": {
+          "title": "Kontakt"
         },
         "title": "Mein Name ist Moritz"
       }

@@ -18,6 +18,7 @@ import About from './components/About';
 import Registration from './components/Registration';
 import Programme from './components/Programme';
 import ImageView from './components/ImageView';
+import Contact from './components/Contact';
 
 i18n
   .use(initReactI18next)
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       }      
     ]
   },
