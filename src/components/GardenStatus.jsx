@@ -21,11 +21,15 @@ useEffect(() => {
     fetchData();
   }, []);  
 
-  if (isLoading) return;
+  if (isLoading) return (
+    <div className="flex items-center justify-start gap-6 flex-1 pr-5">
+      <div className={`ml-auto mr-12 sm:ml-0 sm:mr-0 w-10 h-10 rounded-full bg-neutral-200`} />
+    </div>    
+  );
 
   return (
-    <div className="flex items-center justify-center gap-6 flex-1 pr-5">
-      <div className={`ml-auto w-10 h-10 rounded-full  ${data.status === 'open' ? 'bg-[lime]' : 'bg-[red]'}`} />
+    <div className="flex items-center justify-start gap-6 flex-1 pr-5 w-full ">
+      <div className={`ml-auto sm:ml-0 w-10 h-10 rounded-full  ${data.status === 'open' ? 'bg-[lime]' : 'bg-[red]'}`} />
       <p className="text-sm font-semibold">{ t(`gardenStatus.${data.status}`)}</p>
     </div>
   );
