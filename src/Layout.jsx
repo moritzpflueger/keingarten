@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Menu from './components/Menu'
 import LanguageSelector from './components/LanguageSelector'
+import CookieBanner from './components/CookieBanner';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Outlet />
       </div>
       <Footer />
+      <CookieBanner />
     </div>
   )
 }
