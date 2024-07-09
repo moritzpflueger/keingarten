@@ -45,7 +45,7 @@ const FAQ = () => {
         <details>
           <summary className="text-xl">{ item.question }</summary>
           <p>{ item.answer }</p>
-        </details>        
+        </details>
       ))}
       </div>
       

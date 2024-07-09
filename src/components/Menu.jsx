@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import iconClose from '../assets/iconClose.svg';
-import iconInstagram from '../assets/iconInstagram.svg';
 import LogoLHS from '../assets/LHS_Badge_mitZusatz_sw_Print.png';
 import LogoTNC from '../assets/TNClogoPrimary_OU_CMYK_Europe.png';
 
@@ -64,10 +63,6 @@ const Menu = ({ showMenu, hideMenu }) => {
             <Link to="/legal" onClick={hideMenu} className="hover:underline">
               {t('menu.legal')}
             </Link>
-            /
-            <a href="https://www.instagram.com/keingartenxyz/" target="_blank">
-              <img src={iconInstagram} alt="Instagram" className="w-10" />   
-            </a>   
           </li>
           <li className='flex flex-wrap gap-20 max-w-xl my-10 px-20 sm:px-0'>
             <a 
