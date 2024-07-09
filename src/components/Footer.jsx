@@ -34,7 +34,7 @@ const Footer = () => {
           <img src={LogoTNC} alt="LHS Logo" className="max-w-[160px]" />
         </a>
       </div>      
-      <div class="flex flex-col md:flex-row md:items-center md:gap-10">
+      <div className="flex flex-col md:flex-row md:items-center md:gap-10">
         <a href="https://www.instagram.com/keingartenxyz/" target="_blank" className="mb-5 md:mb-0">
           <img src={iconInstagram} alt="Instagram" className="w-10" />   
         </a>        
