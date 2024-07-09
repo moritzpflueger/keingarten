@@ -41,8 +41,8 @@ const FAQ = () => {
         </InfoBox>              
       </div>
       <div className="px-1 mt-5">
-      {faq.map((item) => (
-        <details>
+      {faq.map((item, index) => (
+        <details key={`faq_${index}`}>
           <summary className="text-xl">{ item.question }</summary>
           <p>{ item.answer }</p>
         </details>
