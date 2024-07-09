@@ -67,11 +67,11 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
       >
         <Link to="/">keingarten</Link>
       </h1>
-      <div className="w-full sm:pl-10 sm:flex-1 col-span-2 order-last sm:order-none flex items-center">
+      <div className="w-full sm:pl-16 sm:flex-1 col-span-2 order-last sm:order-none flex items-center lg:gap-16">
         <WeatherWidget />
         <GardenStatus />
       </div>
-      <div className="col-span-1 flex gap-4 md:gap-32 flex-1 justify-end">
+      <div className="col-span-1 flex gap-5 sm:gap-[4.4rem] md:gap-20 lg:gap-32 flex-1 justify-end">
         <Link to="/images" title="Image Gallery" className="w-10 z-50">
           <IconSquare />
         </Link>
