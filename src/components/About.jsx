@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const About = () => {
 
@@ -19,9 +19,17 @@ const About = () => {
           { t('about.title') }
         </span>
       </h1>
-      <p>
-        { t('about.text') }
-      </p>
+      <Trans 
+        i18nKey="about.text"
+        components={{
+          1: <h1 className="my-3 font-bold text-xl" />,
+          3: <h1 className="my-3 font-bold text-xl" />,
+          5: <h1 className="my-3 font-bold text-xl" />,
+          br: <br />,
+        }}
+      >
+        der Text
+      </Trans>
       
     </section>
   )
