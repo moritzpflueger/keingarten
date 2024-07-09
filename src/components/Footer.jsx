@@ -11,27 +11,27 @@ const Footer = () => {
 
   return (
     <footer className="bg-[lime] p-10 font-semibold">
-      <div className="flex flex-col">
+      {/* <div className="flex flex-col">
         <Link to={'/about'} className="hover:underline">{ t('menu.about') }</Link>
         <Link to={'/#registration'} className="hover:underline">{ t('menu.registration') }</Link>
         <Link to={'/#program'} className="hover:underline">{ t('menu.program') }</Link>
         <Link to={'/#faq'} className="hover:underline">{ t('menu.faq') }</Link>
         <Link to={'/contact'} className="hover:underline">{ t('menu.contact') }</Link>
-      </div>
-      <div className='flex flex-wrap gap-20 w-full my-10'>
+      </div> */}
+      <div className='flex flex-wrap justify-center gap-5 md:gap-10 w-full mb-10'>
         <a 
           href="https://www.stuttgart.de/leben/umwelt/klima/klimastrategie/klima-aktionsprogramm/stuttgarter-klima-innovationsfonds/" 
           target="_blank" 
-          className="sm:flex-1"
+          className=""
         >
-          <img src={LogoLHS} alt="LHS Logo" className="w-full" />
+          <img src={LogoLHS} alt="LHS Logo" className="max-w-[160px]" />
         </a>
         <a 
           href="https://www.nature.org/en-us/about-us/where-we-work/europe/" 
           target="_blank" 
-          className="sm:flex-1"
+          className=""
         >
-          <img src={LogoTNC} alt="LHS Logo" className="w-full" />
+          <img src={LogoTNC} alt="LHS Logo" className="max-w-[160px]" />
         </a>
       </div>      
       <div class="flex flex-col md:flex-row md:items-center md:gap-10">
@@ -40,7 +40,7 @@ const Footer = () => {
         </a>        
         <Link to="/impressum" className="hover:underline">impressum</Link>
         <Link to="/legal" className="hover:underline">legal notice</Link>        
-        <div className="md:ml-auto mt-10 md:mt-0">
+        <div className="md:ml-auto">
           © {new Date().getFullYear()} Keingarten
         </div>
       </div>
