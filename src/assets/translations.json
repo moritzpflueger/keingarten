@@ -7,7 +7,7 @@
   "resources": {
     "en": {
       "translation": {
-        "heroDescription": "Workshops with <1>Ula Liagaite</1>, <br/>AnttoLogy, <3>Tatiana Heumann</3> <br/> and <5>Florencia Curci</5>",
+        "heroDescription": "Workshops with <1>Ula Liagaite</1>, <br/> <3>Tatiana Heumann</3> <br/> and <5>Florencia Curci</5>",
         "gardenStatus": {
           "open": "Open",
           "closed": "Closed"
@@ -124,7 +124,7 @@
     },
     "de": {
       "translation": {
-        "heroDescription": "Workshops mit <1>Ula Liagaite</1>, <br/>AnttoLogy, <3>Tatiana Heumann</3> <br/> und <5>Florencia Curci</5>",
+        "heroDescription": "Workshops mit <1>Ula Liagaite</1>, <br/> <3>Tatiana Heumann</3> <br/> und <5>Florencia Curci</5>",
         "gardenStatus": {
           "open": "Geöffnet",
           "closed": "Geschlossen"
