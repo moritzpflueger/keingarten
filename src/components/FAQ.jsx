@@ -49,8 +49,22 @@ const FAQ = () => {
       <div className="px-1 mt-5">
       {faq.map((item, index) => (
         <details key={`faq_${index}`}>
-          <summary className="text-xl">{ item.question }</summary>
-          <p>{ item.answer }</p>
+          <summary className="text-xl">
+            { item.question }
+          </summary>
+          <Trans 
+            i18nKey="faq.items.question"
+            components={{
+              LinkMapsKeingarten: <a href="https://maps.app.goo.gl/JaVsrCGgtCqHax3j8" target="_blank" rel="noreferrer" className="font-bold underline" />,
+              LinkMapsBracke: <a href="https://maps.app.goo.gl/jb9xSSSv9LmMzb1q7" target="_blank" rel="noreferrer" className="font-bold underline" />,
+              LinkMapsFire: <a href="https://maps.app.goo.gl/P2XuTu2P6ECZ6Qzz7" target="_blank" rel="noreferrer" className="font-bold underline" />,
+              LinkContact: <Link to="/contact" className="font-bold underline" />,
+              i: <i />,
+              br: <br />,
+            }}
+          >
+            { item.answer }
+          </Trans>
         </details>
       ))}
       </div>

@@ -58,19 +58,31 @@
           "items": [
             {
               "question": "How to get there?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "answer": "<i>Public Transportation</i><br>U6, U13 to Feuerbach Sportpark, from there it is a 15 minutes walk to the <LinkMapsKeingarten>keingarten</LinkMapsKeingarten>. <br>(Note: there is three ways to get there, stairs, forest or street)<br><br><i>Bicycle</i><br>Just follow Hohewartstraße until you reach the keingarten.<br><br><i>Car</i><br>Please park your car at the <LinkMapsBracke>Bracke</LinkMapsBracke>, there are plenty parking lots available.<br><br><i>Camping Car</i><br>If you plan to stay with a camping car, please park it also on the parking lots at the <LinkMapsBracke>Bracke</LinkMapsBracke>. Drinking Water available."
             },
             {
-              "question": "Wheelchar Accessibilit?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "question": "Wheelchair Accessibility?",
+              "answer": "The gradient on the site is more than 6%, and a path has already been laid through the garden. We are not yet able to guarantee barrier-free access, but we are working on it. If you would like to visit us in a wheelchair, please send us a <LinkContact>message</LinkContact> in advance so that we can help you access the keingarten. If you want to work together with us on a barrier-free accessibility feel free to contact any time."
             },
             {
-              "question": "Taking Care?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "question": "Awareness?",
+              "answer": "Please be aware that many animals and plants living in the keingarten already. Their habitat is quite sensible, especially for the deers visiting the keingarten from time to time. Therefor please stay outside the marked areas in the keingarten to ensure that we can share the space with the non-human actors. Please also consider that non-humans actors can be scared by loud sounds."
             },
             {
-              "question": "Staying overnight?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "question": "Companion Animals?",
+              "answer": "If you want to bring your dog, cat or other animal you can do that, but please take care that your companion is not endangering other non-human habitants in the keingarten. Please clarify with other human actors in the keingarten if you should put a leash or not to your companion, if anybody is uncomfortable with the situation. Please make sure your companion animal is not leaving any traces behind."
+            },
+            {
+              "question": "Accommodation?",
+              "answer": "For the full experience between 01.08.2024-12.08.2024 it is possible to stay overnight. Therefor please provide your own camping equipment. For the sanitary situation there is a compost toilet, drinking water and a shower available. We will contact you in advance to clarify your needs."
+            },
+            {
+              "question": "Open Fire?",
+              "answer": "Open fires in the keingarten are forbidden due to risk of forest fires. If you want to do a barbecue, you can find a <LinkMapsFire>official fireplace</LinkMapsFire> close by the Steinsträßle. If you need wood for the fireplace, we can provide that."
+            },
+            {
+              "question": "Gardening?",
+              "answer": "You might have another idea about gardening. But we try to find a permanent balance in the keingarten. If you want to do vegetable gardening or just want to through a seedbomb you can do this in the former vegetable garden on top of the keingarten. If you want to take responsibility in organising the vegetable garden feel free to write us a message."
             }
           ]
         },
@@ -175,19 +187,31 @@
           "items": [
             {
               "question": "Wie komme ich hin?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "answer": "<i>Öffentliche Verkehrsmittel</i><br>U6, U13 nach Feuerbach Sportpark, von dort aus sind es 15 Minuten zu Fuß zum <LinkMapsKeingarten>keingarten</LinkMapsKeingarten>. <br>(Hinweis: Es gibt drei Wege dorthin, Treppe, Wald oder Straße)<br><br><i>Fahrrad</i><br>Folgen Sie einfach der Hohewartstraße, bis Sie den keingarten erreichen.<br><br><i>Auto</i><br>Bitte parken Sie Ihr Auto an der <LinkMapsBracke>Bracke</LinkMapsBracke>, dort stehen ausreichend Parkplätze zur Verfügung.<br><br><i>Wohnmobil</i><br>Wenn Sie mit einem Wohnmobil übernachten möchten, parken Sie es bitte ebenfalls auf den Parkplätzen an der <LinkMapsBracke>Bracke</LinkMapsBracke>. Trinkwasser vorhanden."
             },
             {
-              "question": "Rollstuhlzugänglichkeit?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "question": "Rollstuhlgerecht?",
+              "answer": "Die Steigung auf dem Gelände beträgt mehr als 6%, und ein Weg wurde bereits durch den Garten gelegt. Wir können noch nicht garantieren, dass der Zugang barrierefrei ist, aber wir arbeiten daran. Wenn Sie uns im Rollstuhl besuchen möchten, senden Sie uns bitte im Voraus eine <LinkContact>Nachricht</LinkContact>, damit wir Ihnen den Zugang zum keingarten erleichtern können. Wenn Sie mit uns zusammen an einer barrierefreien Zugänglichkeit arbeiten möchten, können Sie uns jederzeit kontaktieren."
             },
             {
-              "question": "Betreuung?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "question": "Achtsamkeit?",
+              "answer": "Bitte beachten Sie, dass bereits viele Tiere und Pflanzen im keingarten leben. Ihr Lebensraum ist sehr sensibel, insbesondere für die Rehe, die den keingarten von Zeit zu Zeit besuchen. Bitte bleiben Sie daher außerhalb der markierten Bereiche im keingarten, um sicherzustellen, dass wir den Raum mit den nicht-menschlichen Akteuren teilen können. Bitte beachten Sie auch, dass nicht-menschliche Akteure durch laute Geräusche erschreckt werden können."
             },
             {
-              "question": "Übernachtung?",
-              "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              "question": "Begleittiere?",
+              "answer": "Wenn Sie Ihren Hund, Ihre Katze oder ein anderes Tier mitbringen möchten, können Sie das tun, aber bitte achten Sie darauf, dass Ihr Begleiter keine anderen nicht-menschlichen Bewohner im keingarten gefährdet. Klären Sie mit anderen menschlichen Akteuren im keingarten ab, ob Sie Ihrem Begleiter eine Leine anlegen sollten oder nicht, wenn jemand sich unwohl fühlt. Stellen Sie sicher, dass Ihr Begleittier keine Spuren hinterlässt."
+            },
+            {
+              "question": "Unterkunft?",
+              "answer": "Für das volle Erlebnis zwischen dem 01.08.2024 und dem 12.08.2024 ist es möglich, über Nacht zu bleiben. Bitte bringen Sie Ihr eigenes Campingzubehör mit. Für die sanitäre Situation gibt es eine Komposttoilette, Trinkwasser und eine Dusche. Wir werden uns im Voraus mit Ihnen in Verbindung setzen, um Ihre Bedürfnisse zu klären."
+            },
+            {
+              "question": "Offenes Feuer?",
+              "answer": "Offene Feuer im keingarten sind aufgrund der Waldbrandgefahr verboten. Wenn Sie grillen möchten, finden Sie einen <LinkMapsFire>offiziellen Grillplatz</LinkMapsFire> in der Nähe des Steinsträßle. Wenn Sie Holz für den Grill benötigen, können wir das bereitstellen."
+            },
+            {
+              "question": "Gärtnern?",
+              "answer": "Vielleicht haben Sie eine andere Vorstellung vom Gärtnern. Aber wir versuchen, im keingarten ein dauerhaftes Gleichgewicht zu finden. Wenn Sie Gemüsegärtnern möchten oder einfach nur eine Samenbombe werfen möchten, können Sie dies im ehemaligen Gemüsegarten auf dem keingarten tun. Wenn Sie Verantwortung für die Organisation des Gemüsegartens übernehmen möchten, schreiben Sie uns gerne eine Nachricht."
             }
           ]
         },
