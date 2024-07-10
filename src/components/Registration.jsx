@@ -123,7 +123,6 @@ const Registration = () => {
               className="border-b border-black px-3"
               type="number"
               min="1"
-              max="7"
               value={numberOfGuests}
               onChange={(e) => setNumberOfGuests(e.target.value)}
               required
