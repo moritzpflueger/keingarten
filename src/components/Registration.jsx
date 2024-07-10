@@ -10,7 +10,7 @@ const Registration = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [numberOfGuests, setNumberOfGuests] = useState(1);
-  const [hasAllergies, setHasAllergies] = useState(false);
+  const [isStayingOvernight, setIsStayingOvernight] = useState(false);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -20,7 +20,7 @@ const Registration = () => {
     setEmail('');
     setPhone('');
     setNumberOfGuests(1);
-    setHasAllergies(false);
+    setIsStayingOvernight(false);
     setStartDate(null);
     setEndDate(null);
   };
@@ -56,7 +56,7 @@ const Registration = () => {
           name,
           email,
           phone,
-          hasAllergies,
+          isStayingOvernight,
           numberOfGuests,
           startDate: formattedStartDate,
           endDate: formattedEndDate,
@@ -133,29 +133,29 @@ const Registration = () => {
         </div>
         <div className="mb-2">
           <label>
-            {t('registration.allergies.label')}:
+            {t('registration.stayingOvernight.label')}:
             <label className="custom-checkbox ml-3">
               <input
                 type="radio"
                 value="true"
-                checked={hasAllergies === true}
-                onChange={(e) => setHasAllergies(true)}
+                checked={isStayingOvernight === true}
+                onChange={(e) => setIsStayingOvernight(true)}
                 required
               />   
                 <span className="checkbox-label">
-                  {t('registration.allergies.yes')}
+                  {t('registration.stayingOvernight.yes')}
                 </span>           
             </label>
             <label className="custom-checkbox ml-3">
               <input
                 type="radio"
                 value="false"
-                checked={hasAllergies === false}
-                onChange={(e) => setHasAllergies(false)}
+                checked={isStayingOvernight === false}
+                onChange={(e) => setIsStayingOvernight(false)}
                 required
               />
               <span className="checkbox-label">
-                {t('registration.allergies.no')}
+                {t('registration.stayingOvernight.no')}
               </span>           
             </label>
           </label>

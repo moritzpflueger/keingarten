@@ -34,8 +34,8 @@
           "numberOfGuests": {
             "label": "Number of Guests"
           },
-          "allergies": {
-            "label": "Allergies",
+          "stayingOvernight": {
+            "label": "Staying Overnight?",
             "yes": "Yes",
             "no": "No"
           },
@@ -163,8 +163,8 @@
           "numberOfGuests": {
             "label": "Anzahl der Gäste"
           },
-          "allergies": {
-            "label": "Allergien",
+          "stayingOvernight": {
+            "label": "Übernachtung?",
             "yes": "Ja",
             "no": "Nein"
           },
