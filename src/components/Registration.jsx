@@ -81,7 +81,7 @@ const Registration = () => {
 
   return (
     <section id="registration">
-      <form onSubmit={handleSubmit} className="mb-10">
+      <form onSubmit={handleSubmit}>
         <div className="mb-2">
           <label>
             {t('registration.name.label')}:

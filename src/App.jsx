@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div>
-      <section id="registration" className="p-5 mx-auto max-w-4xl pb-20">
+      <section id="registration" className="p-5 mx-auto max-w-4xl">
         <div className="py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="col-span-1">
             <h1 
