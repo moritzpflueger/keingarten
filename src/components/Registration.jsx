@@ -86,7 +86,7 @@ const Registration = () => {
           <label>
             {t('registration.name.label')}:
             <input
-              className="border-b border-black px-3"
+              className="border-b border-black px-3 !rounded-none"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -98,7 +98,7 @@ const Registration = () => {
           <label>
             {t('registration.email.label')}:
             <input
-              className="border-b border-black px-3"
+              className="border-b border-black px-3 !rounded-none"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -110,7 +110,7 @@ const Registration = () => {
           <label>
             {t('registration.phone.label')}:
             <input
-              className="border-b border-black px-3"
+              className="border-b border-black px-3 !rounded-none"
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
@@ -122,7 +122,7 @@ const Registration = () => {
           <label>
             {t('registration.numberOfGuests.label')}:
             <input
-              className="border-b border-black px-3"
+              className="border-b border-black px-3 !rounded-none"
               type="number"
               min="1"
               value={numberOfGuests}
