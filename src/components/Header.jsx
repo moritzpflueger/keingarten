@@ -55,7 +55,7 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
   return (
     <header 
       ref={headerRef}
-      className="fixed z-50 top-0 bg-white flex items-center justify-between p-5 pb-0 lg:pb-5 border-b-4 border-black w-full"
+      className="fixed z-50 top-0 bg-white flex items-start lg:items-center justify-between p-5 pb-0 lg:pb-5 border-b-4 border-black w-full"
     >
       <div
         className="h-full top-0 left-0 absolute bg-[lime] mix-blend-multiply" 
