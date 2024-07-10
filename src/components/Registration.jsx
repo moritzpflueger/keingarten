@@ -77,6 +77,8 @@ const Registration = () => {
     }
   };
 
+  const isDisabled = !name || !email || !phone || !startDate || !endDate || isSubmitting;
+
   return (
     <section id="registration">
       <form onSubmit={handleSubmit} className="mb-10">
@@ -169,9 +171,9 @@ const Registration = () => {
         />
         <button 
           id="submit-button"
-          disabled={isSubmitting}
+          disabled={isDisabled}
           type="submit" 
-          className="px-5 py-3 text-white mt-5 bg-black w-2/3 h-12"
+          className="px-5 py-3 text-white mt-5 bg-black w-2/3 h-12 disabled:bg-neutral-700"
         >
           {isSubmitting 
           ? <span className="loading-dots mx-auto scale-150"></span>
