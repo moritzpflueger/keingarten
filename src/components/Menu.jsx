@@ -13,7 +13,7 @@ const Menu = ({ showMenu, hideMenu }) => {
   return (
     <nav className={`fixed flex items-start justify-between w-full z-50`}>
       <div className="h-[100dvh]">
-        <ul className="fixed w-full flex flex-col items-center gap-0 px-10 py-6 text-4xl sm:text-5xl top-0 left-0 bg-white z-20 max-h-[100dvh] overflow-y-auto border-b-4 border-black">
+        <ul className="fixed w-full flex flex-col items-center gap-0 px-10 py-6 text-2xl sm:text-5xl top-0 left-0 bg-white z-20 max-h-[100dvh] overflow-y-auto border-b-4 border-black">
           <li className="absolute top-3 right-1">
             <button 
               onClick={hideMenu}
@@ -23,7 +23,7 @@ const Menu = ({ showMenu, hideMenu }) => {
             </button>
           </li>
           <li 
-            className="text-2xl sm:text-4xl py-10"
+            className="text-2xl sm:text-4xl py-5 sm:py-10"
             style={{ fontFamily: 'Phase' }}
           >
             <Link to="/" onClick={hideMenu}>
@@ -64,7 +64,7 @@ const Menu = ({ showMenu, hideMenu }) => {
               {t('menu.legal')}
             </Link>
           </li>
-          <li className='flex flex-wrap gap-20 max-w-xl my-10 px-20 sm:px-0'>
+          <li className='flex gap-16 my-3'>
             <a 
               href="https://www.stuttgart.de/leben/umwelt/klima/klimastrategie/klima-aktionsprogramm/stuttgarter-klima-innovationsfonds/" 
               target="_blank" 
