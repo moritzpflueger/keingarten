@@ -75,6 +75,7 @@
           ]
         },
         "program": {
+          "title": "Program",
           "tooltip": {
             "question": "The program is free of charge. Please book a slot to participate. For more questions please see the <1>FAQ</1> or <3>Contact Us</3> directly.",
             "info": "If you want to <1>stay at the garden overnight</1>, please bring a tent and camping equipment to enjoy your stay at the <3>keingarten</3>."
@@ -191,6 +192,7 @@
           ]
         },
         "program": {
+          "title": "Programm",
           "tooltip": {
             "question": "Das Programm ist kostenlos. Bitte buchen Sie einen Slot, um teilzunehmen. Bei weiteren Fragen lesen Sie bitte die <1>FAQ</1> oder kontaktieren Sie uns <3>direkt</3>.",
             "info": "Wenn Sie <1>im Garten übernachten</1> möchten, bringen Sie bitte ein Zelt und Campingausrüstung mit, um Ihren Aufenthalt im <3>keingarten</3> zu genießen."

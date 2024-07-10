@@ -14,7 +14,9 @@ const Programme = () => {
         className="font-serif text-6xl sm:text-7xl my-10"
         style={{ fontFamily: 'Phase' }}
       >
-        <span className="pr-3">Summer Program</span>
+        <span className="pr-3">
+          { t('program.title') }
+        </span>
       </h1>
       <div className="flex gap-3 mt-5 mb-16">
         <InfoBox 
