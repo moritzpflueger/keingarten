@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const GardenStatus = () => {
+const GardenStatus = ({ className }) => {
 
   const [data, setData]= useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -21,16 +21,17 @@ useEffect(() => {
     fetchData();
   }, []);  
 
-  if (isLoading) return (
-    <div className="flex items-center justify-start gap-6 flex-1 pr-5">
-      <div className={`ml-auto mr-12 sm:ml-0 sm:mr-0 w-10 h-10 rounded-full bg-neutral-200`} />
-    </div>    
-  );
+  const statusClass = () => {
+    if (isLoading) return 'bg-neutral-200';
+    if (data.status === 'open') return 'bg-[lime]';
+    if (data.status === 'closed') return 'bg-[red]';
+    return 'bg-neutral-200';
+  }
 
   return (
-    <div className="flex items-center justify-start gap-6 flex-1 pr-5 w-full ">
-      <div className={`ml-auto sm:ml-0 w-10 h-10 rounded-full  ${data.status === 'open' ? 'bg-[lime]' : 'bg-[red]'}`} />
-      <p className="text-sm font-semibold">{ t(`gardenStatus.${data.status}`)}</p>
+    <div className={`flex items-center justify-start gap-2 sm:gap-6 ${className}`}>
+      <div className={`w-10 h-10 rounded-full ${statusClass()}`} />
+      <p className="text-sm font-semibold">{ data.status ? t(`gardenStatus.${data.status}`) : '' }</p>
     </div>
   );
 }
