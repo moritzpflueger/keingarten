@@ -24,18 +24,25 @@ const Programme = () => {
           id="program-question"
           place="top"
         >
-          <Trans i18nKey="program.tooltip.question">
-            For the duration of your <Link className="font-bold underline" to="/#registration">participation</Link> you can either stay at the garden over night or come during the <Link className="font-bold underline" to="/#program">daily activities</Link>.
-          </Trans>
+          <Trans 
+            i18nKey="program.tooltip.question"
+            components={{
+              LinkFaq: <Link to="/#faq" className="font-bold underline" />,
+              LinkContact: <Link to="/contact" className="font-bold underline" />
+            }}
+          />
         </InfoBox>
         <InfoBox 
           type="info"
           id="program-info"
           place="top"
         >
-          <Trans i18nKey="program.tooltip.info">
-            If you want to <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link>, please bring a tent and camping equipment to enjoy your stay at the <Link className="font-bold underline" to="/about">keingarten</Link>.
-          </Trans>
+          <Trans 
+            i18nKey="program.tooltip.info"
+            components={{
+              LinkRegistration: <Link to="/#registration" className="font-bold underline" />
+            }}
+          />
         </InfoBox>              
       </div>
 
@@ -48,10 +55,12 @@ const Programme = () => {
                 strong: <strong />,
               }}
             >
-              {item.date}
+              { item.date }
             </Trans>
             <br />
-            <i className="font-semibold">{item.title}</i>
+            <i className="font-semibold">
+              { item.title }
+            </i>
             <br />
             <Trans
               i18nKey="program.items.description"
@@ -60,11 +69,11 @@ const Programme = () => {
                 3: item.link2 ? <Link to={item.link2} className="whitespace-nowrap underline" /> : <span />,
               }}
             >
-              {item.description}
+              { item.description }
             </Trans>
           </p>
           <p className="mt-5 max-w-2xl">
-            {t(item.text)}
+            { item.text }
           </p>
         </article>
       ))}

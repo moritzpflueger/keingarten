@@ -51,18 +51,22 @@ function App() {
                 id="registration-question"
                 place="top"
               >
-                <Trans i18nKey="registration.tooltip.question">
-                  The program is free of charge. Please book a slot to participate. For more questions please see the <Link className="font-bold underline" to="/#faq">FAQ</Link> or <Link className="font-bold underline" to="/contact">Contact Us</Link> directly.
-                </Trans>
+                <Trans 
+                  i18nKey="registration.tooltip.question"
+                  components={{
+                    LinkFaq: <Link to="/#faq" className="font-bold underline" />,
+                    LinkContact: <Link to="/contact" className="font-bold underline" />
+                  }}
+                />
               </InfoBox>
               <InfoBox 
                 type="info"
                 id="registration-info"
                 place="top"
               >
-                <Trans i18nKey="registration.tooltip.info">
-                  No previous movement or dance experience needed. Bring comfy clothes and footwear, a notebook and a pen.
-                </Trans>
+                <Trans 
+                  i18nKey="registration.tooltip.info"
+                />
               </InfoBox>              
             </div>
             <p className="text-2xl my-10">

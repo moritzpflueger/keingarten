@@ -26,18 +26,24 @@ const FAQ = () => {
           id="faq-question"
           place="top"
         >
-          <Trans i18nKey={'faq.tooltip.question'}>
-            For the duration of your participation you can either <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link> or register for the <Link className="font-bold underline" to="/#program">daily activities</Link>.
-          </Trans>
+          <Trans 
+            i18nKey="faq.tooltip.question"
+            components={{
+              LinkFaq: <Link to="/#faq" className="font-bold underline" />,
+            }}
+          />
         </InfoBox>
         <InfoBox 
           type="info"
           id="faq-info"
           place="top"
         >
-          <Trans i18nKey={'faq.tooltip.info'}>
-            If you want to <Link className="font-bold underline" to="/#faq">stay at the garden overnight</Link>, please bring a tent and camping equipment to enjoy your stay at the <Link className="font-bold underline" to="/about">keingarten</Link>.
-          </Trans>
+          <Trans 
+            i18nKey="faq.tooltip.info"
+            components={{
+              LinkContact: <Link to="/contact" className="font-bold underline" />
+            }}
+          />
         </InfoBox>              
       </div>
       <div className="px-1 mt-5">
