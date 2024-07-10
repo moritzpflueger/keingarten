@@ -55,33 +55,35 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
   return (
     <header 
       ref={headerRef}
-      className="fixed z-50 top-0 bg-white grid grid-cols-2 sm:flex sm:items-center sm:justify-between p-5 pb-0 sm:pb-5 border-b-4 border-black w-full"
+      className="fixed z-50 top-0 bg-white flex items-center justify-between p-5 pb-0 lg:pb-5 border-b-4 border-black w-full"
     >
       <div
         className="h-full top-0 left-0 absolute bg-[lime] mix-blend-multiply" 
         style={{ width: `${scrollPosition}%` }}
       />
-      <h1 
-        className="z-50 text-3xl font-serif col-span-1"
-        style={{ fontFamily: 'Phase' }}
-      >
-        <Link to="/">keingarten</Link>
-      </h1>
-      <div className="w-full sm:pl-16 sm:flex-1 col-span-2 order-last sm:order-none flex items-center lg:gap-16">
-        <WeatherWidget />
-        <GardenStatus />
-      </div>
-      <div className="col-span-1 flex gap-5 sm:gap-[4.4rem] md:gap-20 lg:gap-32 flex-1 justify-end">
-        <Link to="/images" title="Image Gallery" className="w-10 z-50">
-          <IconSquare />
-        </Link>
-        <button 
-          className="w-10 z-50"
-          role="button"
-          onClick={handleMenuClick}
+      <div className="w-full flex-1 flex flex-col lg:flex-row lg:items-center lg:gap-16">
+        <h1 
+          className="z-50 text-3xl font-serif"
+          style={{ fontFamily: 'Phase' }}
         >
-          <img src={iconMenu} className="w-full" />
-        </button>        
+          <Link to="/">keingarten</Link>
+        </h1>
+        <WeatherWidget />
+      </div>
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-32 justify-end items-end">
+        <GardenStatus className="order-last lg:order-none self-start" />
+        <div className="flex justify-between mr-auto gap-6 lg:gap-32">
+          <Link to="/images" title="Image Gallery" className="w-10 z-50">
+            <IconSquare />
+          </Link>
+          <button 
+            className="w-10 z-50"
+            role="button"
+            onClick={handleMenuClick}
+          >
+            <img src={iconMenu} className="w-full" />
+          </button>             
+        </div>     
       </div>
     </header>
   );
