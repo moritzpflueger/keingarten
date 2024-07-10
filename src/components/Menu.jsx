@@ -70,14 +70,14 @@ const Menu = ({ showMenu, hideMenu }) => {
               target="_blank" 
               className="sm:flex-1"
             >
-              <img src={LogoLHS} alt="LHS Logo" className="w-full" />
+              <img src={LogoLHS} alt="LHS Logo" className="w-full max-w-[160px]" />
             </a>
             <a 
               href="https://www.nature.org/en-us/about-us/where-we-work/europe/" 
               target="_blank" 
               className="sm:flex-1"
             >
-              <img src={LogoTNC} alt="LHS Logo" className="w-full" />
+              <img src={LogoTNC} alt="LHS Logo" className="w-full max-w-[160px]" />
             </a>
           </li>             
         </ul>   
