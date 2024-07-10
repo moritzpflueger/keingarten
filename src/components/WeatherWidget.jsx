@@ -29,7 +29,7 @@ const WeatherWidget = () => {
   }, [i18n.language]);
 
   return (
-    <div className="min-w-[230px] max-h-20 relative scale-75 origin-left -translate-x-4 -translate-y-3 sm:-translate-y-1">
+    <div className="w-[230px] max-h-20 relative scale-75 origin-left -translate-x-4 -translate-y-3 sm:-translate-y-1">
       <a 
         className="weatherwidget-io" 
         href={`https://forecast7.com/${i18n.language}/48d819d16/stuttgart-feuerbach/`} 
