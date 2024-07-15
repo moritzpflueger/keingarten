@@ -13,8 +13,10 @@ function App() {
   const { t, i18n } = useTranslation()
   const location = useLocation();
 
-  const formattedStartDate = new Date('2024-08-01').toLocaleDateString(i18n.language)
-  const formattedEndDate = new Date('2024-08-12').toLocaleDateString(i18n.language)
+  // const formattedStartDate = new Date('2024-08-01').toLocaleDateString(i18n.language)
+  // const formattedEndDate = new Date('2024-08-12').toLocaleDateString(i18n.language)
+  const formattedStartDate = new Date('2024-08-01').toLocaleDateString('de')
+  const formattedEndDate = new Date('2024-08-12').toLocaleDateString('de')
 
   useEffect(() => {
     console.log('location', location.hash)
