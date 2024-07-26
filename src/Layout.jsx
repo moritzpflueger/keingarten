@@ -1,33 +1,32 @@
-import { useState } from 'react'
-import './App.css'
-import { Outlet } from 'react-router-dom'
+import { useState } from "react"
+import "./App.css"
+import { Outlet } from "react-router-dom"
 
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Menu from './components/Menu'
-import LanguageSelector from './components/LanguageSelector'
-import CookieBanner from './components/CookieBanner';
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Menu from "./components/Menu"
+import LanguageSelector from "./components/LanguageSelector"
+import CookieBanner from "./components/CookieBanner"
 
 function App() {
-
   const [menuIsVisible, setMenuIsVisible] = useState(false)
-  const [headerHeight, setHeaderHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(0)
 
   return (
-    <div 
+    <div
       className="flex flex-col"
-      style={{ paddingTop: `${headerHeight}px`}}
+      style={{ paddingTop: `${headerHeight}px` }}
     >
-      <Header 
+      <Header
         handleMenuClick={() => setMenuIsVisible(true)}
         onHeightChange={(height) => setHeaderHeight(height)}
       />
-      <Menu 
+      <Menu
         showMenu={menuIsVisible}
-        hideMenu={() => setMenuIsVisible(false)} 
+        hideMenu={() => setMenuIsVisible(false)}
       />
-      
-      <LanguageSelector className="p-5 " />    
+
+      <LanguageSelector className="p-5 " />
       <div className="min-h-screen">
         <Outlet />
       </div>
