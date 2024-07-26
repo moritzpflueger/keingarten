@@ -3,11 +3,12 @@
   "fallbackLng": "de",
   "interpolation": {
     "escapeValue": false
-  },  
+  },
   "resources": {
     "en": {
       "translation": {
-        "heroDescription": "Workshops with <1>Ula Liagaite</1>, <br/> <3>Tatiana Heumann</3> <br/> and <5>Florencia Curci</5>",
+        "heroDescription": "Visit us in in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3> and get to know the project.",
+        "link1": "https://maps.app.goo.gl/JaVsrCGgtCqHax3j8",
         "gardenStatus": {
           "open": "Open",
           "closed": "Closed"
@@ -35,7 +36,7 @@
             "label": "Number of Guests"
           },
           "stayingOvernight": {
-            "label": "Staying Overnight?",
+            "label": "Need Accomodation?",
             "yes": "Yes",
             "no": "No"
           },
@@ -46,16 +47,20 @@
           },
           "submitButton": "Book Slot",
           "tooltip": {
-            "question": "The program is free of charge. Please book a slot to participate. For more questions please see the <LinkFaq>FAQ</LinkFaq> or <LinkContact>Contact Us</LinkContact> directly.",
-            "info": "If you want to participate on several days in the program, we can offer you accomodation if you are coming from outside of town. Therefore we will contact you later on."
+            "question": "The keingarten project is looking for new ways of climate education. For more information please see the <LinkFaq>FAQ</LinkFaq> or <LinkContact>Contact Us</LinkContact> directly.",
+            "info": "We examine the site together and develop ideas for practical implementations for climate impact adaptation."
           }
         },
         "faq": {
           "tooltip": {
             "question": "Please find guidelines on accessibility, awareness and usage of the space under the <LinkFaq>questions</LinkFaq>. You can unfold them by clicking on the triangle in front of a question.",
-            "info": "For further Information or Collaboration with the keingarten project <LinkContact>Contact Us</LinkContact> directly. You can also reach out to us via our Whatsapp Group."
-          },          
+            "info": "For further Information or Collaboration with the keingarten project <LinkContact>Contact Us</LinkContact> directly."
+          },
           "items": [
+            {
+              "question": "What is it about?",
+              "answer": "The project aims to promote practical implementations of climate impact adaptations and opportunities for sustainable consumption. A former garden shed on an agricultural site in Stuttgart-Feuerbach will become a realtime laboratory. In collective experiments and participatory projects, concepts can be developed and ideas tested on the 5349 square metres of natural space."
+            },
             {
               "question": "How to get there?",
               "answer": "<i>Public Transportation</i><br>U6, U13 to Feuerbach Sportpark, from there it is a 15 minutes walk to the <LinkMapsKeingarten>keingarten</LinkMapsKeingarten>. <br>(Note: there is three ways to get there, stairs, forest or street)<br><br><i>Bicycle</i><br>Just follow Hohewartstraße until you reach the keingarten.<br><br><i>Car</i><br>Please park your car at the <LinkMapsBracke>Bracke</LinkMapsBracke>, there are plenty parking lots available.<br><br><i>Camping Car</i><br>If you plan to stay with a camping car, please park it also on the parking lots at the <LinkMapsBracke>Bracke</LinkMapsBracke>. Drinking Water available."
@@ -89,30 +94,30 @@
         "program": {
           "title": "Program",
           "tooltip": {
-            "question": "No previous movement or dance experience needed. Bring comfy clothes and footwear, a notebook and a pen. For more questions please see the <LinkFaq>FAQ</LinkFaq> or <LinkContact>Contact Us</LinkContact> directly.",
+            "question": "The Program is dedicated on our arrival to the keingarten and to do first steps towards accessability. For further questions please see our <LinkFaq>FAQ</LinkFaq> or <LinkContact>Contact Us</LinkContact> directly.",
             "info": "After your <LinkRegistration>Registration</LinkRegistration> you will receive a email with the coordinates and possible ways of arrival to the keingarten project. We are looking forward to your visit."
           },
           "items": [
- 	{
-              "title": "From A to Be on the way to the keingarten",
+            {
+              "title": "From A to Be - get to know the keingarten",
               "date": "<strong>01.08.2024 - 12.08.2024,</strong> täglich 11:00-18:00 Uhr",
               "description": "in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3>",
-              "text": "The keingarten is opening its doors, inviting us to explore new ways of coming together. We aim to create a broad approach to ways of being by exchanging ideas from various disciplines and practices. Two workshops will focus on our arrival to the keingarten and our bodies in space. The embodied knowledge can be shared during the workshops through installations and site-specific listening spaces, promoting both intervention and non-intervention in the biotope created by the vacancy of the past 30 years. Please register to participate in the workshops.",
+              "text": "The keingarten is opening its doors, inviting to explore new ways of climate education. Visit us to exchange ideas or just to get to know the place. Together we are searching for practical climate impact adaptions and possibilities of being together in the keingarten project. In the launch events we are developing a framework to open up the space for local residents and to an international community.",
               "link1": "https://maps.app.goo.gl/JaVsrCGgtCqHax3j8"
-            },            
+            },
 
-	{
+            {
               "title": "A move towards a fiction of coexistence",
               "date": "<strong>01.08.2024 - 07.08.2024,</strong> daily between 16:00-18:00h",
               "description": "with <1>Ula Liagaite</1> and <3>AnttoLogy</3>",
-              "text": "An action, a move, a collective effort to dig deeper in an ongoing practice. It invites those at keingarten who want to move, play, build and listen together, while being guided through movement practice composed of simple physical exercises and tasks. We meet on a daily basis, get our hands dirty and build a swing?",
+              "text": "An action, a move, a collective effort to dig deeper in an ongoing practice. We will do stretching exercises to feel climate anxiety and talk about embodied knowledge of living on a fragile planet. We invite those who want to move, play, build and listen together. The exercise is guiding through movement practice composed of simple physical exercises. No previous movement or dance experience needed. Bring comfy clothes and footwear, a notebook and a pen. We meet on a daily basis, get our hands dirty and build interventions with reused material which we can find on the land.",
               "link1": "https://www.muenchner-kammerspiele.de/de/wir/13127-ula-liagait"
             },
             {
               "title": "Napping/Listening by Siestaria",
               "date": "<strong>05.08.2024 - 12.08.2024,</strong> daily on appointment",
               "description": "with <1>Tatiana Heuman</1> and <3>Florencia Curci</3>",
-              "text": "In this workshop we’ll settle into a communal resting and listening space. Through audio guides and soft sound devices we propose an immersion in the inbetween of sleep and wakefulness to open the possibility of a collective dream terrain.",
+              "text": "In this exercise we’ll settle into a communal resting and listening space. Through audio guides and soft sound devices we propose an immersion in the inbetween of sleep and wakefulness to open the possibility of a collective dream terrain. We examine ways of listening to insects, sending radiowaves with guides into the land and develop a framework for sensing the environment we are in. The researched based work is dealing with acoustic ecology in a experimental setup.",
               "link1": "https://www.tatianaheuman.com/",
               "link2": "https://florenciacurci.com/"
             },
@@ -120,12 +125,12 @@
               "title": "Siestaria Concert for shruti box, radios and land",
               "date": "<strong>09.08.2024,</strong> from sunset to sunrise",
               "description": "with <1>Tatiana Heuman</1> and <3>Florencia Curci</3>",
-              "text": "We invite you to an immersive listening nocturnal experience to explore the rich auditory tapestry of nightfall and daybreak. Throughout the night, participants will have the chance to drift in and out of sleep, all while remaining aware of the subtle acoustic changes in our environment.",
+              "text": "We invite you to an immersive listening nocturnal experience to explore the rich auditory tapestry of nightfall and daybreak. Throughout the night, participants will have the chance to drift in and out of sleep, all while remaining aware of the subtle acoustic changes in our environment. Throughout the listening experience we will try to identify different organisms in the space and try to understand natural cycles by their sound.",
               "link1": "https://www.tatianaheuman.com/",
               "link2": "https://florenciacurci.com/"
             }
-          ]                    
-        },        
+          ]
+        },
         "about": {
           "title": "About",
           "text": "<1>What is the keingarten?</1> The keingarten project aims to provide access to a natural area also for people who do not have their own garden and to enable them to participate in its design. <br><br> Practical implementations for climate change adaptation and opportunities for sustainable consumption are to be promoted in the project. Therefor an agricultural area in Stuttgart-Feuerbach is being transformed into a realtime laboratory. In this, concepts can be developed and ideas tested on the 5349qm large natural area in collective experiments and participatory projects. <br><br> The keingarten project aims to design future scenarios for the currently unused area together with actors and residents of the city of Stuttgart. Based on the public experiments, projects and observations we want to promote local cycles and analyse them within a global community. <br><br> For the start of the project in August 2024, workshops with content from environmental sciences, art and music are planned. From 2025, educational offers for families are planned. The project is intended to establish long-term access to the space, which can be used by local initiatives and groups by arrangement. <3>What makes the keingarten different?</3> Internationally, green spaces in urban areas and their peripheries are becoming increasingly important. <br><br> The keingarten project aims to provide access to a green space in the city of Stuttgart. The space is becoming a realtime laboratory for ideas on a micro and a macro level. The project is to be implemented in a resource-saving and sustainable manner through the reuse of existing structures and materials. <br><br> The approach of the project is based on years of experience in participatory initiatives and voluntary association work. Together with a group of interested people we want to develop the project over the next three years. Thus, analyses of local cycles and international cooperation projects should be possible in the long term. <5>How can I participate in the design of the keingarten?</5> First of all, we want to find out the specific demands and different understanding on a garden design. The goal of the project is to search for new forms and possibilities of being together. For this purpose, the area is to be gradually opened to the participants. At the same time parts of the site are to be protected from human access to create so-called core zones in which non-human actors can live. The aim is to create a balance of human and non-human actions, for this purpose a diverse range of habitat spaces are to be constructed and a cultural program is to be established. If you also have an idea for an activity or the design of a habitat space or a cultural event on the property in Stuttgart Feuerbach, please write us an email. If you just want to visit us, feel free to come by the keingarten after appointment."
@@ -144,7 +149,7 @@
     },
     "de": {
       "translation": {
-        "heroDescription": "Workshops mit <1>Ula Liagaite</1>, <br/> <3>Tatiana Heumann</3> <br/> und <5>Florencia Curci</5>",
+        "heroDescription": "Besuche uns in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3> und lerne das Projekt kennen.",
         "gardenStatus": {
           "open": "Geöffnet",
           "closed": "Geschlossen"
@@ -172,7 +177,7 @@
             "label": "Anzahl der Gäste"
           },
           "stayingOvernight": {
-            "label": "Übernachtung?",
+            "label": "Unterkunft benötigt?",
             "yes": "Ja",
             "no": "Nein"
           },
@@ -183,16 +188,20 @@
           },
           "submitButton": "Slot Buchen",
           "tooltip": {
-            "question": "Das Programm ist kostenlos. Bitte buchen Sie einen Slot, um teilzunehmen. Bei weiteren Fragen lesen Sie bitte die <LinkFaq>FAQ</LinkFaq> oder kontaktieren Sie uns <LinkContact>direkt</LinkContact>.",
-            "info": "Wenn Sie an mehreren Tagen am Programm teilnehmen möchten, können wir Ihnen eine Unterkunft anbieten, wenn Sie von außerhalb der Stadt kommen. Wir werden uns später mit Ihnen in Verbindung setzen."
+            "question": "Das keingarten project sucht nach neuen Wegen der Klimabildung. Für weitere Informationen lesen Sie bitte unser <LinkFaq>FAQ</LinkFaq> oder <LinkContact>kontaktieren Sie uns</LinkContact> direkt.",
+            "info": "Wir untersuchen den Ort gemeinsam und entwickeln Ideen für praktische Umsetzung zur Klimafolgenanpassung."
           }
         },
         "faq": {
           "tooltip": {
             "question": "Bitte finden Sie Richtlinien zur Zugänglichkeit, Achtsamkeit und Nutzung des Raums unter den <LinkFaq>Fragen</LinkFaq>. Sie können sie ausklappen, indem Sie auf das Dreieck vor einer Frage klicken.",
-            "info": "Für weitere Informationen oder Zusammenarbeit mit dem keingarten-Projekt kontaktieren Sie uns <LinkContact>direkt</LinkContact>. Sie können uns auch über unsere Whatsapp-Gruppe erreichen."
+            "info": "Für weitere Informationen oder Zusammenarbeit mit dem keingarten-Projekt kontaktieren Sie uns <LinkContact>direkt</LinkContact>."
           },
           "items": [
+            {
+              "question": "Worum geht es?",
+              "answer": "Praktische Umsetzungen zur Klimafolgenanpassung und Möglichkeiten für einen nachhaltigen Konsum sollen in dem Projekt gefördert werden. Auf einer landwirtschaftlichen Nutzfläche in Stuttgart-Feuerbach wird ein ehemaliges Gartenhaus zum Reallabor. In diesem können in kollektiven Experimenten und partizipativen Projekten Konzepte entwickelt und Ideen auf der 5349qm großen Naturfläche erprobt werden."
+            },
             {
               "question": "Wie komme ich hin?",
               "answer": "<i>Öffentliche Verkehrsmittel</i><br>U6, U13 nach Feuerbach Sportpark, von dort aus sind es 15 Minuten zu Fuß zum <LinkMapsKeingarten>keingarten</LinkMapsKeingarten>. <br>(Hinweis: Es gibt drei Wege dorthin, Treppe, Wald oder Straße)<br><br><i>Fahrrad</i><br>Folgen Sie einfach der Hohewartstraße, bis Sie den keingarten erreichen.<br><br><i>Auto</i><br>Bitte parken Sie Ihr Auto an der <LinkMapsBracke>Bracke</LinkMapsBracke>, dort stehen ausreichend Parkplätze zur Verfügung.<br><br><i>Wohnmobil</i><br>Wenn Sie mit einem Wohnmobil übernachten möchten, parken Sie es bitte ebenfalls auf den Parkplätzen an der <LinkMapsBracke>Bracke</LinkMapsBracke>. Trinkwasser vorhanden."
@@ -231,24 +240,24 @@
           },
           "items": [
             {
-              "title": "From A to Be auf dem Weg zum keingarten",
+              "title": "From A to Be - lerne den keingarten kennen",
               "date": "<strong>01.08.2024 - 12.08.2024,</strong> täglich 11:00-18:00 Uhr",
               "description": "in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3>",
-              "text": "Der keingarten öffnet seine Türen und lädt uns ein, neue Wege der Begegnung zu erkunden. Unser Ziel ist es, durch den Austausch von Ideen aus verschiedenen Disziplinen und Praktiken einen breit gefächerten Ansatz für Möglichkeiten des Zusammenseins zu schaffen. Zwei Workshops werden sich mit unserer Ankunft im keingarten und unseren Körpern im Raum beschäftigen. Das verkörperte Wissen kann während der Workshops durch Installationen und ortsspezifische Hörräume geteilt werden, um sowohl das Eingreifen als auch das Nicht-Eingreifen in das Biotop zu fördern, das durch den Leerstand der letzten 30 Jahre entstanden ist. Bitte melden Sie sich für die Teilnahme an den Workshops vorher an.",
+              "text": "Der keingarten öffnet seine Türen und lädt dazu ein, neue Wege der Klimabildung zu gehen. Besuchen Sie uns, um Ideen auszutauschen oder einfach nur, um den Ort kennen zu lernen. Gemeinsam suchen wir nach praktischen Umsetzungen zur Klimafolgenanpassungen und Möglichkeiten des Coexsistenz im Projekt. In den Eröffnungsveranstaltungen entwickeln wir einen Rahmen, um den Raum für die lokale Bevölkerung und eine internationale Gemeinschaft zu öffnen.",
               "link1": "https://maps.app.goo.gl/JaVsrCGgtCqHax3j8"
             },
-	{
+            {
               "title": "Ein Schritt in Richtung einer Fiktion des Zusammenlebens",
               "date": "<strong>01.08.2024 - 07.08.2024,</strong> täglich 16:00-18:00 Uhr",
               "description": "mit <1>Ula Liagaite</1> und <3>AnttoLogy</3>",
-              "text": "Eine Aktion, eine Bewegung, ein kollektiver Versuch, tiefer in eine laufende Praxis einzutauchen. Es lädt diejenigen in den keingarten ein, die zusammen bewegen, spielen, bauen und zuhören möchten, während sie durch eine Bewegungspraxis geführt werden, die aus einfachen körperlichen Übungen und Aufgaben besteht. Wir treffen uns täglich, machen uns die Hände schmutzig und bauen eine Schaukel?",
+              "text": "Eine Aktion, eine Bewegung, eine kollektive Anstrengung, um in einer fortlaufenden Praxis tiefer zu graben. Wir werden Dehnungsübungen machen, um Klimaängste zu spüren und über das verkörperte Wissen eines Lebens auf einem fragilen Planeten zu sprechen. Wir laden alle ein, die sich gemeinsam bewegen, spielen, bauen und zuhören wollen. Die Übung wird durch eine Bewegungspraxis geleitet, die aus einfachen körperlichen Übungen besteht. Keine vorherige Bewegungs- oder Tanzerfahrung erforderlich. Mitzubringen sind bequeme Kleidung und Schuhe, ein Notizbuch und ein Stift. Wir treffen uns täglich, machen uns die Hände schmutzig und bauen Interventionen mit wiederverwendeten Materialien, die wir auf dem Land finden können.",
               "link1": "https://www.muenchner-kammerspiele.de/de/wir/13127-ula-liagait"
             },
             {
               "title": "Napping/Listening von Siestaria",
               "date": "<strong>05.08.2024 - 12.08.2024,</strong> täglich nach Absprache",
               "description": "mit <1>Tatiana Heuman</1> und <3>Florencia Curci</3>",
-              "text": "In diesem Workshop werden wir uns in einen gemeinsamen Ruhe- und Zuhörraum einfinden. Durch Audioführungen und sanfte Klanggeräte schlagen wir eine Eintauchen in das Zwischen von Schlaf und Wachheit vor, um die Möglichkeit eines kollektiven Traumgeländes zu eröffnen.",
+              "text": "Bei dieser Übung werden wir uns in einem gemeinsamen Ruhe- und Hörraum niederlassen. Mit Hilfe von Audioführern und sanften Klanggeräten schlagen wir ein Eintauchen in die Zwischenwelt von Schlaf und Wachsein vor, um die Möglichkeit eines kollektiven Traumterrains zu eröffnen. Wir untersuchen Möglichkeiten, Insekten zuzuhören, senden Radiowellen mit Audioguides ins Land und entwickeln einen Rahmen für die Wahrnehmung der Umgebung, in der wir uns befinden. Die auf Forschung basierende Arbeit befasst sich mit akustischer Ökologie in einem experimentellen Setting.",
               "link1": "https://www.tatianaheuman.com/",
               "link2": "https://florenciacurci.com/"
             },
@@ -256,15 +265,15 @@
               "title": "Siestaria Konzert für Shruti Box, Radios und Land",
               "date": "<strong>09.08.2024,</strong> von Sonnenuntergang bis Sonnenaufgang",
               "description": "mit <1>Tatiana Heuman</1> und <3>Florencia Curci</3>",
-              "text": "Wir laden dich zu einem immersiven nächtlichen Hörerlebnis ein, um das reiche akustische Gewebe des Einbruchs der Nacht und des Tagesanbruchs zu erkunden. Im Laufe der Nacht haben die Teilnehmer die Möglichkeit, einzuschlafen und aufzuwachen, während sie sich der subtilen akustischen Veränderungen in unserer Umgebung bewusst bleiben.",
+              "text": "Wir laden Sie zu einem nächtlichen Hörerlebnis ein, bei dem Sie den reichen Klangteppich von Einbruch der Dunkelheit und Tagesanbruch erkunden können. Während der ganzen Nacht werden die TeilnehmerInnen die Möglichkeit haben, in den Schlaf hinein- und wieder herauszudriften, während sie sich der subtilen akustischen Veränderungen in unserer Umgebung bewusst bleiben. Während der gesamten Hörerfahrung werden wir versuchen, verschiedene Organismen im Raum zu identifizieren und die natürlichen Zyklen anhand ihrer Geräusche zu erkennen.",
               "link1": "https://www.tatianaheuman.com/",
               "link2": "https://florenciacurci.com/"
             }
-          ]               
+          ]
         },
         "about": {
           "title": "Über",
-          "text": "<1>Was ist der keingarten?</1> Das Projekt keingarten setzt sich dafür ein, dass auch Personen, die über keinen eigenen Garten verfügen, Zugang zu einer Naturfläche bekommen und an deren Gestaltung mitwirken können. <br><br> Praktische Umsetzungen zur Klimafolgenanpassung und Möglichkeiten für einen nachhaltigen Konsum sollen in dem Projekt gefördert werden. Auf einer landwirtschaftlichen Nutzfläche in Stuttgart-Feuerbach wird ein ehemaliges Gartenhaus zum Reallabor. In diesem können in kollektiven Experimenten und partizipativen Projekten Konzepte entwickelt und Ideen auf der 5349qm großen Naturfläche erprobt werden. <br><br> Das Projekt keingarten strebt an, gemeinsam mit AkteurInnen und EinwohnerInnen der Stadt Stuttgart Zukunftsszenarien für die aktuell brachliegende Fläche zu entwerfen. Ausgehend von den gemeinsamen Experimenten sollen Projekte und Produkte entstehen, die lokale Kreisläufe fördern und im Wissensaustausch mit einer globalen Gemeinschaft stehen. <br><br> Für den Start des Projekts im August 2024 finden Workshops mit Inhalten aus dem Umweltwissenschaften, der Kunst sowie der Musik statt. Ab 2025 sind Bildungsangebote für Familien geplant. Das Projekt soll den langfristigen Zugang zu der ungenutzten Fläche herstellen, die Fläche kann hierfür von lokalen Initiativen und Gruppen nach Absprache genutzt werden. <3>Was macht der keingarten anders?</3> International gewinnen Grünflächen in urbanen Räumen und ihren Peripherien an Bedeutung, Projekte wie der High Line Park in New York, der Bosco Verticale in Mailand oder andere Großprojekte der Green City sind häufig mit Gentrifizierung oder zusätzlichen Emissionen durch Baumaßnahmen verbunden. Diese entstehen, da diese Projekte in einer Skalierung durchgeführt werden, die es erschwert, auf individuelle, soziale oder nachhaltige Gesichtspunkte Rücksicht zu nehmen. <br><br> Das Projekt keingarten möchte dies anders machen und versteht sich als Reallabor für Ideen auf Mikro- und Makroebene. Durch die Wiederverwendung bereits vorhandender Strukturen und Materialien soll das Projekt ressourcenschonend und nachhaltig umgesetzt werden. <br><br> Der Ansatz des Projekts speist sich aus jahrelanger Erfahrungen in partizipativen Initiativen und ehrenamtlicher Vereinsarbeit. Bei vielen Initiativen mit ähnlicher Zielsetzung sind die Vereinsgebäude oder die Grünfläche in städtischem oder privatem Besitz und müssen gemietet oder gepachtet werden. Ändern sich die Nutzungsverhältnisse, führt dies häufig zu der Auflösung der Vereine. In dem Fall des kein garten Projekts ist die Besitzerin des Grundstücks an einer langfristigen Nutzung interessiert und Teil der Initiative. Somit sollen Analysen von lokalen Kreisläufe und internationale Projekte der Zusammenarbeit langfristig möglich werden. Die Bevölkerung soll bereits zum frühstmöglichen Zeitpunkt in die Projektplanung eingebunden werden. <5>Wie kann an der Gestaltung des keingarten mitgewirkt werden?</5> Zunächst gilt es herauszufinden was wir anders machen können und was ein Garten ist, wenn er sich den klassischen Regeln und Normen des Gartenbaus entzieht? Das Ziel des keingarten Projekts ist es nach neuen Formen und Möglichkeiten des Zusammenlebens zu suchen. Hierfür soll die Fläche schrittweise für die Bevölkerung geöffnet werden und gleichzeitig Teile des Geländes als sogenannte Kernzonen vor dem Zutritt durch Menschen geschützt werden. Ziel hierbei ist es eine möglichst große Vielfalt von menschlichen wie nicht-menschlichen AkteurInnen herzustellen, hierzu soll ein diverses Angebot an Lebensräumen und ein Kulturprogramm etabliert werden. Wenn du auch eine Idee für eine Aktivität oder die Gestaltung eines Lebensraums auf dem Grundstück in Stuttgart Feuerbach hast, schreibe uns gerne eine Mail. Wenn du uns einfach mal besuchen magst, komm doch gerne zwischen dem 01.08-12.08.2024 im keingarten vorbei und mach dir selbst ein Bild. <br><br> Ab 2025 wird es regelmäßige Termine innerhalb eines Reallabors geben in denen du deine Ideen und Vorstellungen einbringen kannst. Begleitet wird dies von einem Umweltingenieur, einem Architekten und einer Pädagogin. Ziel der Arbeit im keingarten ist es, ein Gleichgewicht zwischen menschlichen und nicht-menschlichen AkteurInnen herzustellen sowie natürliche Kreisläufe auf dem Gelände zu nutzen und sich darin einzugliedern."
+          "text": "<1>Was ist der keingarten?</1> Das Projekt keingarten setzt sich dafür ein, dass auch Personen, die über keinen eigenen Garten verfügen, Zugang zu einer Naturfläche bekommen und an deren Gestaltung mitwirken können. <br><br> Praktische Umsetzungen zur Klimafolgenanpassung und Möglichkeiten für einen nachhaltigen Konsum sollen in dem Projekt gefördert werden. Auf einer landwirtschaftlichen Nutzfläche in Stuttgart-Feuerbach wird ein ehemaliges Gartenhaus zum Reallabor. In diesem können in kollektiven Experimenten und partizipativen Projekten Konzepte entwickelt und Ideen auf der 5349qm großen Naturfläche erprobt werden. <br><br> Das Projekt keingarten strebt an, gemeinsam mit AkteurInnen und EinwohnerInnen der Stadt Stuttgart Zukunftsszenarien für die aktuell brachliegende Fläche zu entwerfen. Ausgehend von den gemeinsamen Experimenten sollen Projekte und Produkte entstehen, die lokale Kreisläufe fördern und im Wissensaustausch mit einer globalen Gemeinschaft stehen. <br><br> Für den Start des Projekts im August 2024 finden Workshops mit Inhalten aus dem Umweltwissenschaften, der Kunst sowie der Musik statt. Ab 2025 sind Bildungsangebote für Familien geplant. Das Projekt soll den langfristigen Zugang zu der ungenutzten Fläche herstellen, die Fläche kann hierfür von lokalen Initiativen und Gruppen nach Absprache genutzt werden. <3>Was macht der keingarten anders?</3> Auf internationaler Ebene gewinnen Grünflächen in städtischen Gebieten und deren Peripherie zunehmend an Bedeutung.<br><br> Das Projekt keingarten zielt darauf ab, den Zugang zu einem Grünraum in der Stadt Stuttgart zu ermöglichen. Der Raum wird zu einem Echtzeitlabor für Ideen auf Mikro- und Makroebene. Durch die Wiederverwendung vorhandener Strukturen und Materialien soll das Projekt ressourcenschonend und nachhaltig umgesetzt werden. <br><br> Der Ansatz des Projekts speist sich aus jahrelanger Erfahrungen in partizipativen Initiativen und ehrenamtlicher Vereinsarbeit. Bei vielen Initiativen mit ähnlicher Zielsetzung sind die Vereinsgebäude oder die Grünfläche in städtischem oder privatem Besitz und müssen gemietet oder gepachtet werden. Ändern sich die Nutzungsverhältnisse, führt dies häufig zu der Auflösung der Vereine. In dem Fall des kein garten Projekts ist die Besitzerin des Grundstücks an einer langfristigen Nutzung interessiert und Teil der Initiative. Somit sollen Analysen von lokalen Kreisläufe und internationale Projekte der Zusammenarbeit langfristig möglich werden. Die Bevölkerung soll bereits zum frühstmöglichen Zeitpunkt in die Projektplanung eingebunden werden. <5>Wie kann an der Gestaltung des keingarten mitgewirkt werden?</5> Zunächst gilt es herauszufinden was wir anders machen können und was ein Garten ist, wenn er sich den klassischen Regeln und Normen des Gartenbaus entzieht? Das Ziel des keingarten Projekts ist es nach neuen Formen und Möglichkeiten des Zusammenlebens zu suchen. Hierfür soll die Fläche schrittweise für die Bevölkerung geöffnet werden und gleichzeitig Teile des Geländes als sogenannte Kernzonen vor dem Zutritt durch Menschen geschützt werden. Ziel hierbei ist es eine möglichst große Vielfalt von menschlichen wie nicht-menschlichen AkteurInnen herzustellen, hierzu soll ein diverses Angebot an Lebensräumen und ein Kulturprogramm etabliert werden. Wenn du auch eine Idee für eine Aktivität oder die Gestaltung eines Lebensraums auf dem Grundstück in Stuttgart Feuerbach hast, schreibe uns gerne eine Mail. Wenn du uns einfach mal besuchen magst, komm doch gerne zwischen dem 01.08-12.08.2024 im keingarten vorbei und mach dir selbst ein Bild. <br><br> Ab 2025 wird es regelmäßige Termine innerhalb eines Reallabors geben in denen du deine Ideen und Vorstellungen einbringen kannst. Begleitet wird dies von einem Umweltingenieur, einem Architekten und einer Pädagogin. Ziel der Arbeit im keingarten ist es, ein Gleichgewicht zwischen menschlichen und nicht-menschlichen AkteurInnen herzustellen sowie natürliche Kreisläufe auf dem Gelände zu nutzen und sich darin einzugliedern."
         },
         "imprint": {
           "title": "Impressum"
