@@ -7,7 +7,7 @@
   "resources": {
     "en": {
       "translation": {
-        "heroDescription": "Visit us in in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3> and get to know the project.",
+        "heroDescription": "Visit us in in <2>Stuttgart Feuerbach</2> and get to know the project.",
         "link1": "https://maps.app.goo.gl/JaVsrCGgtCqHax3j8",
         "gardenStatus": {
           "open": "active",
@@ -100,7 +100,7 @@
           "items": [
             {
               "title": "From A to Be - get to know the keingarten",
-              "date": "<strong>01.08.2024 - 12.08.2024,</strong> täglich 11:00-18:00 Uhr",
+              "date": "<strong>01.08.2024 - 12.08.2024,</strong> daily between 11:00-18:00 Uhr",
               "description": "in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3>",
               "text": "The keingarten is opening its doors, inviting to explore new ways of climate education. Visit us to exchange ideas or just to get to know the place. Together we are searching for practical climate impact adaptions and possibilities of being together in the keingarten project. In the launch events we are developing a framework to open up the space for local residents and to an international community.",
               "link1": "https://maps.app.goo.gl/JaVsrCGgtCqHax3j8"
@@ -125,7 +125,7 @@
               "title": "Siestaria Concert for shruti box, radios and land",
               "date": "<strong>09.08.2024,</strong> from sunset to sunrise",
               "description": "with <1>Tatiana Heuman</1> and <3>Florencia Curci</3>",
-              "text": "We invite you to an immersive listening nocturnal experience to explore the rich auditory tapestry of nightfall and daybreak. Throughout the night, participants will have the chance to drift in and out of sleep, all while remaining aware of the subtle acoustic changes in our environment. Throughout the listening experience we will try to identify different organisms in the space and try to understand natural cycles by their sound.",
+              "text": "We invite you to an immersive listening nocturnal experience to explore the rich auditory tapestry of nightfall and daybreak. Throughout the night, participants will have the chance to drift in and out of sleep, all while remaining aware of the subtle acoustic changes in our environment. Throughout the listening experience we will try to identify different organisms in the space and to listen to natural cycles by their different sounds.",
               "link1": "https://www.tatianaheuman.com/",
               "link2": "https://florenciacurci.com/"
             }
@@ -149,7 +149,7 @@
     },
     "de": {
       "translation": {
-        "heroDescription": "Besuche uns in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3> und lerne das Projekt kennen.",
+        "heroDescription": "Besuche uns in <2>Stuttgart Feuerbach</2> und lerne das Projekt kennen.",
         "gardenStatus": {
           "open": "Aktiv",
           "closed": "Passiv"
@@ -243,14 +243,14 @@
               "title": "From A to Be - lerne den keingarten kennen",
               "date": "<strong>01.08.2024 - 12.08.2024,</strong> täglich 11:00-18:00 Uhr",
               "description": "in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3>",
-              "text": "Der keingarten öffnet seine Türen und lädt dazu ein, neue Wege der Klimabildung zu gehen. Besuchen Sie uns, um Ideen auszutauschen oder einfach nur, um den Ort kennen zu lernen. Gemeinsam suchen wir nach praktischen Umsetzungen zur Klimafolgenanpassungen und Möglichkeiten des Coexsistenz im Projekt. In den Eröffnungsveranstaltungen entwickeln wir einen Rahmen, um den Raum für die lokale Bevölkerung und eine internationale Gemeinschaft zu öffnen.",
+              "text": "Der keingarten öffnet seine Türen und lädt dazu ein, neue Wege der Klimabildung zu gehen. Besuchen Sie uns, um Ideen auszutauschen oder einfach nur, um den Ort kennen zu lernen. Gemeinsam suchen wir nach praktischen Umsetzungen zur Klimafolgenanpassungen und Möglichkeiten der Kollaboration im Projekt. In den Eröffnungsveranstaltungen entwickeln wir einen Rahmen, um den Raum für die lokale Bevölkerung und eine internationale Gemeinschaft zu öffnen.",
               "link1": "https://maps.app.goo.gl/JaVsrCGgtCqHax3j8"
             },
             {
               "title": "Ein Schritt in Richtung einer Fiktion des Zusammenlebens",
               "date": "<strong>01.08.2024 - 07.08.2024,</strong> täglich 16:00-18:00 Uhr",
               "description": "mit <1>Ula Liagaite</1> und <3>AnttoLogy</3>",
-              "text": "Eine Aktion, eine Bewegung, eine kollektive Anstrengung, um in einer fortlaufenden Praxis tiefer zu graben. Wir werden Dehnungsübungen machen, um Klimaängste zu spüren und über das verkörperte Wissen eines Lebens auf einem fragilen Planeten zu sprechen. Wir laden alle ein, die sich gemeinsam bewegen, spielen, bauen und zuhören wollen. Die Übung wird durch eine Bewegungspraxis geleitet, die aus einfachen körperlichen Übungen besteht. Keine vorherige Bewegungs- oder Tanzerfahrung erforderlich. Mitzubringen sind bequeme Kleidung und Schuhe, ein Notizbuch und ein Stift. Wir treffen uns täglich, machen uns die Hände schmutzig und bauen Interventionen mit wiederverwendeten Materialien, die wir auf dem Land finden können.",
+              "text": "Eine Aktion, eine Bewegung, eine kollektive Anstrengung, um in einer fortlaufenden Praxis tiefer zu graben. Wir werden Dehnungsübungen machen, um Klimaängste zu spüren und über das verkörperte Wissen eines Lebens auf einem fragilen Planeten sprechen. Wir laden alle ein, die sich gemeinsam bewegen, spielen, bauen und zuhören wollen. Die Übung wird durch eine Bewegungspraxis geleitet, die aus einfachen körperlichen Übungen besteht. Keine vorherige Bewegungs- oder Tanzerfahrung erforderlich. Mitzubringen sind bequeme Kleidung und Schuhe, ein Notizbuch und ein Stift. Wir treffen uns täglich, machen uns die Hände schmutzig und bauen Interventionen mit wiederverwendeten Materialien, die wir auf dem Land finden können.",
               "link1": "https://www.muenchner-kammerspiele.de/de/wir/13127-ula-liagait"
             },
             {
