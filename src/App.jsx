@@ -87,30 +87,15 @@ function App() {
             </p>
             <p className="text-2xl">
               <Trans i18nKey="heroDescription">
-                Workshops with{" "}
+                Besuche uns in{" "}
                 <a
                   className="whitespace-nowrap underline"
-                  href="https://www.muenchner-kammerspiele.de/de/wir/13127-ula-liagait"
+                  href="https://maps.app.goo.gl/JaVsrCGgtCqHax3j8"
                   target="_blank"
                 >
-                  Ula Liagaite
-                </a>
-                , AnttoLogy,{" "}
-                <a
-                  className="whitespace-nowrap underline"
-                  href="https://www.tatianaheuman.com/"
-                  target="_blank"
-                >
-                  Tatiana Heumann
-                </a>
-                and{" "}
-                <a
-                  className="whitespace-nowrap underline"
-                  href="https://florenciacurci.com/"
-                  target="_blank"
-                >
-                  Florencia Curci
-                </a>
+                  Stuttgart Feuerbach
+                </a>{" "}
+                and get to know the project. Visit us in in{" "}
               </Trans>
             </p>
           </div>
