@@ -1,31 +1,31 @@
 @font-face {
-  font-family: 'Phase';
-  src: url('./assets/fonts/Phase-AGX_0-0-50.ttf') format('truetype-variations');
+  font-family: "Phase";
+  src: url("./assets/fonts/Phase-AGX_0-0-50.ttf") format("truetype-variations");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Jetbrains Mono';
-  src: url('./assets/fonts/JetBrainsMono-Light.woff2') format('woff2');
+  font-family: "Jetbrains Mono";
+  src: url("./assets/fonts/JetBrainsMono-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Jetbrains Mono';
-  src: url('./assets/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-family: "Jetbrains Mono";
+  src: url("./assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Jetbrains Mono';
-  src: url('./assets/fonts/JetBrainsMono-Medium.woff2') format('woff2');
+  font-family: "Jetbrains Mono";
+  src: url("./assets/fonts/JetBrainsMono-Medium.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 
 body {
-  font-family: 'Jetbrains Mono', monospace;
+  font-family: "Jetbrains Mono", monospace;
 }
 
 summary {
@@ -51,7 +51,7 @@ input[type="radio"] {
 }
 
 .custom-checkbox input[type="radio"] + .checkbox-label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -69,7 +69,7 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  content: '\2713'; /* Unicode checkmark */
+  content: "\2713"; /* Unicode checkmark */
   color: white;
 }
 
@@ -94,7 +94,7 @@ input[type="radio"] {
   left: 0;
   right: 0;
   margin: 0 auto;
-  content: '—';
+  content: "—";
   font-size: 0.75em;
 }
 .react-datepicker__day--selected,
@@ -109,16 +109,23 @@ input[type="radio"] {
   opacity: 0.5;
 }
 
-.react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--selected) {
-  font-weight: bold ;
+.react-datepicker__day:not(.react-datepicker__day--disabled):not(
+    .react-datepicker__day--selected
+  ) {
+  font-weight: bold;
 }
 
 .loading-dots {
   display: block;
   width: 10px;
   aspect-ratio: 4;
-  background: radial-gradient(circle closest-side, #fff 90%, #0000) 0/calc(100%/3) 100% space; /* Adjust size */
+  background: radial-gradient(circle closest-side, #fff 90%, #0000) 0 /
+    calc(100% / 3) 100% space; /* Adjust size */
   clip-path: inset(0 100% 0 0);
   animation: l1 1s steps(4) infinite;
 }
-@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+@keyframes l1 {
+  to {
+    clip-path: inset(0 -34% 0 0);
+  }
+}

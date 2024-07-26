@@ -1,13 +1,13 @@
-import { Tooltip } from 'react-tooltip'
+import { Tooltip } from "react-tooltip"
 
-import IconQuestionmark from './IconQuestionmark'
-import IconInfo from './IconInfo'
+import IconQuestionmark from "./IconQuestionmark"
+import IconInfo from "./IconInfo"
 
 const InfoBox = ({ id, type, place, children }) => {
   return (
     <span className="whitespace-nowrap text-xl w-16">
-      <Tooltip 
-        id={id} 
+      <Tooltip
+        id={id}
         place={place}
         clickable
         className="
@@ -21,13 +21,16 @@ const InfoBox = ({ id, type, place, children }) => {
           z-50
         "
       >
-        { children }
+        {children}
       </Tooltip>
-      <a data-tooltip-id={id} className="w-16">
-        { type === 'question' ? <IconQuestionmark /> : <IconInfo /> }
-      </a>                
+      <a
+        data-tooltip-id={id}
+        className="w-16"
+      >
+        {type === "question" ? <IconQuestionmark /> : <IconInfo />}
+      </a>
     </span>
-  );
+  )
 }
 
-export default InfoBox;
+export default InfoBox
