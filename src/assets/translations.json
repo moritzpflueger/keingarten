@@ -10,8 +10,8 @@
         "heroDescription": "Visit us in in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3> and get to know the project.",
         "link1": "https://maps.app.goo.gl/JaVsrCGgtCqHax3j8",
         "gardenStatus": {
-          "open": "Open",
-          "closed": "Closed"
+          "open": "active",
+          "closed": "passive"
         },
         "menu": {
           "about": "About",
@@ -151,8 +151,8 @@
       "translation": {
         "heroDescription": "Besuche uns in <1>Stuttgart Feuerbach</1> <3>(48°47'56.3\"N 9°07'41.7\"E)</3> und lerne das Projekt kennen.",
         "gardenStatus": {
-          "open": "Geöffnet",
-          "closed": "Geschlossen"
+          "open": "Aktiv",
+          "closed": "Passiv"
         },
         "menu": {
           "about": "Über",
