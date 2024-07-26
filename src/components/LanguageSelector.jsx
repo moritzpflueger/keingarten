@@ -1,18 +1,18 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React from "react"
+import { useTranslation } from "react-i18next"
 
 const LanguageSelector = ({ className }) => {
-  const { i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const { i18n } = useTranslation()
+  const currentLanguage = i18n.language
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+    i18n.changeLanguage(lng)
+  }
 
   const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'de', name: 'Deutsch' },
-  ];
+    { code: "en", name: "English" },
+    { code: "de", name: "Deutsch" },
+  ]
 
   return (
     <div className={`flex space-x-4 ${className}`}>
@@ -20,13 +20,13 @@ const LanguageSelector = ({ className }) => {
         <button
           key={language.code}
           onClick={() => changeLanguage(language.code)}
-          className={`${currentLanguage === language.code ? 'no-underline font-bold' : 'underline'}`}
+          className={`${currentLanguage === language.code ? "no-underline font-bold" : "underline"}`}
         >
-          { language.name }
+          {language.name}
         </button>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default LanguageSelector;
+export default LanguageSelector
