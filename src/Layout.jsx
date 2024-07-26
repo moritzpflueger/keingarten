@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Menu from "./components/Menu"
 import LanguageSelector from "./components/LanguageSelector"
+import WeatherWidget from "./components/WeatherWidget"
 import CookieBanner from "./components/CookieBanner"
 
 function App() {
@@ -26,7 +27,10 @@ function App() {
         hideMenu={() => setMenuIsVisible(false)}
       />
 
-      <LanguageSelector className="p-5 " />
+      <div className="flex justify-between">
+        <LanguageSelector className="p-5 pr-0" />
+        <WeatherWidget />
+      </div>
       <div className="min-h-screen">
         <Outlet />
       </div>

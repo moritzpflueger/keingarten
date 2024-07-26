@@ -15,7 +15,7 @@ const LanguageSelector = ({ className }) => {
   ]
 
   return (
-    <div className={`flex space-x-4 ${className}`}>
+    <div className={`flex flex-row sm:flex-row space-x-4 ${className}`}>
       {languages.map((language) => (
         <button
           key={language.code}

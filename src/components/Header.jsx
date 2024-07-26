@@ -69,7 +69,6 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
         >
           <Link to="/">keingarten</Link>
         </h1>
-        <WeatherWidget />
       </div>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-32 justify-end items-end">
         <GardenStatus className="order-last lg:order-none self-start" />
