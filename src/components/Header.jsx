@@ -71,7 +71,6 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
         </h1>
       </div>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-32 justify-end items-end">
-        <GardenStatus className="order-last lg:order-none self-start" />
         <div className="flex justify-between mr-auto gap-6 lg:gap-32">
           <Link
             to="/images"
