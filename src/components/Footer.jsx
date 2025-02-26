@@ -51,14 +51,14 @@ const Footer = () => {
           target="_blank"
           className=""
         >
-          <img src={LogoLHS} alt="LHS Logo" className="max-w-[160px]" />
+          <img src={LogoLHS} alt="LHS Logo" className="w-full max-w-[160px]" />
         </a>
         <a
           href="https://www.nature.org/en-us/about-us/where-we-work/europe/"
           target="_blank"
           className=""
         >
-          <img src={LogoTNC} alt="LHS Logo" className="max-w-[160px]" />
+          <img src={LogoTNC} alt="LHS Logo" className="w-full max-w-[160px]" />
         </a>
         <a
           href="https://atelier-zaumseil.de/startseite/"
@@ -68,7 +68,7 @@ const Footer = () => {
           <img
             src={LogoGartenKulturLabor}
             alt="LHS Logo"
-            className="max-w-[60px]"
+            className="w-full max-w-[60px]"
           />
         </a>
       </div>
