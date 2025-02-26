@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom"
-import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom";
 
-import iconInstagram from "../assets/iconInstagram.svg"
-import iconWhatsapp from "../assets/iconWhatsapp.svg"
-import LogoLHS from "../assets/LHS_Badge_mitZusatz_sw_Print.png"
-import LogoTNC from "../assets/TNClogoPrimary_OU_CMYK_Europe.png"
+import LogoGartenKulturLabor from "../assets/2405031-Logo-GartenKulturLabor.png";
+import iconInstagram from "../assets/iconInstagram.svg";
+import iconWhatsapp from "../assets/iconWhatsapp.svg";
+import LogoLHS from "../assets/Klimainnovationsfonds_Foerderbadge_RGB.png";
+import LogoTNC from "../assets/TNClogoPrimary_OU_CMYK_Europe.png";
 
 const Footer = () => {
-  const { t } = useTranslation()
-
   return (
     <footer className="bg-[lime] p-10 font-semibold flex flex-wrap justify-between items-center">
       {/* <div className="flex flex-col">
@@ -23,16 +21,10 @@ const Footer = () => {
           <span className="mb-5 whitespace-nowrap">
             © {new Date().getFullYear()} Keingarten
           </span>
-          <Link
-            to="/impressum"
-            className="hover:underline"
-          >
+          <Link to="/impressum" className="hover:underline">
             impressum
           </Link>
-          <Link
-            to="/legal"
-            className="hover:underline"
-          >
+          <Link to="/legal" className="hover:underline">
             legal notice
           </Link>
         </p>
@@ -42,22 +34,14 @@ const Footer = () => {
             target="_blank"
             className="block"
           >
-            <img
-              src={iconInstagram}
-              alt="Instagram"
-              className="w-12 md:w-16"
-            />
+            <img src={iconInstagram} alt="Instagram" className="w-12 md:w-16" />
           </a>
           <a
             href="https://chat.whatsapp.com/EKrevz698XsGSmPkDYo74V"
             target="_blank"
             className="block sm:hidden"
           >
-            <img
-              src={iconWhatsapp}
-              alt="Whatsapp"
-              className="w-10"
-            />
+            <img src={iconWhatsapp} alt="Whatsapp" className="w-10" />
           </a>
         </div>
       </div>
@@ -67,25 +51,28 @@ const Footer = () => {
           target="_blank"
           className=""
         >
-          <img
-            src={LogoLHS}
-            alt="LHS Logo"
-            className="max-w-[160px]"
-          />
+          <img src={LogoLHS} alt="LHS Logo" className="max-w-[160px]" />
         </a>
         <a
           href="https://www.nature.org/en-us/about-us/where-we-work/europe/"
           target="_blank"
           className=""
         >
+          <img src={LogoTNC} alt="LHS Logo" className="max-w-[160px]" />
+        </a>
+        <a
+          href="https://atelier-zaumseil.de/startseite/"
+          target="_blank"
+          className=""
+        >
           <img
-            src={LogoTNC}
+            src={LogoGartenKulturLabor}
             alt="LHS Logo"
-            className="max-w-[160px]"
+            className="max-w-[60px]"
           />
         </a>
       </div>
     </footer>
-  )
-}
-export default Footer
+  );
+};
+export default Footer;

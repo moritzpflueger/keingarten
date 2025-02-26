@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
+import LogoGartenKulturLabor from "../assets/2405031-Logo-GartenKulturLabor.png";
 import iconClose from "../assets/iconClose.svg";
-import LogoLHS from "../assets/LHS_Badge_mitZusatz_sw_Print.png";
+import LogoLHS from "../assets/Klimainnovationsfonds_Foerderbadge_RGB.png";
 import LogoTNC from "../assets/TNClogoPrimary_OU_CMYK_Europe.png";
 
 const Menu = ({ showMenu, hideMenu }) => {
@@ -76,6 +77,17 @@ const Menu = ({ showMenu, hideMenu }) => {
                 src={LogoTNC}
                 alt="LHS Logo"
                 className="w-full max-w-[160px]"
+              />
+            </a>
+            <a
+              href="https://atelier-zaumseil.de/startseite/"
+              target="_blank"
+              className="sm:flex-1"
+            >
+              <img
+                src={LogoGartenKulturLabor}
+                alt="LHS Logo"
+                className="w-full max-w-[60px]"
               />
             </a>
           </li>
