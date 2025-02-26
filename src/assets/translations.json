@@ -52,6 +52,7 @@
           }
         },
         "faq": {
+          "title": "Frequently Asked Questions",
           "tooltip": {
             "question": "Please find guidelines on accessibility, awareness and usage of the space under the <LinkFaq>questions</LinkFaq>. You can unfold them by clicking on the triangle in front of a question.",
             "info": "For further Information or Collaboration with the keingarten project <LinkContact>Contact Us</LinkContact> directly."
@@ -193,6 +194,7 @@
           }
         },
         "faq": {
+          "title": "Häufig gestellte Fragen",
           "tooltip": {
             "question": "Bitte finden Sie Richtlinien zur Zugänglichkeit, Achtsamkeit und Nutzung des Raums unter den <LinkFaq>Fragen</LinkFaq>. Sie können sie ausklappen, indem Sie auf das Dreieck vor einer Frage klicken.",
             "info": "Für weitere Informationen oder Zusammenarbeit mit dem keingarten-Projekt kontaktieren Sie uns <LinkContact>direkt</LinkContact>."

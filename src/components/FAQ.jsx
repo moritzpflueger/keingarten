@@ -1,60 +1,35 @@
-import { Trans, useTranslation } from "react-i18next"
-import { Link } from "react-router-dom"
+import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-import InfoBox from "./InfoBox"
+import InfoBox from "./InfoBox";
 
 const FAQ = () => {
-  const { t } = useTranslation()
-  const faq = t("faq.items", { returnObjects: true })
+  const { t } = useTranslation();
+  const faq = t("faq.items", { returnObjects: true });
 
   return (
-    <section
-      id="faq"
-      className="p-5 pb-20 mx-auto max-w-4xl"
-    >
+    <section id="faq" className="p-5 pb-20 mx-auto max-w-4xl">
       <h1
         className="font-serif text-6xl sm:text-7xl my-10"
         style={{ fontFamily: "Phase" }}
       >
-        <span className="pr-3">
-          Frequently
-          <br />
-          Asked
-          <br />
-          Questions
-        </span>
+        {t("faq.title")}
       </h1>
       <div className="flex gap-3 mt-5 mb-16">
-        <InfoBox
-          type="question"
-          id="faq-question"
-          place="top"
-        >
+        <InfoBox type="question" id="faq-question" place="top">
           <Trans
             i18nKey="faq.tooltip.question"
             components={{
-              LinkFaq: (
-                <Link
-                  to="/#faq"
-                  className="font-bold underline"
-                />
-              ),
+              LinkFaq: <Link to="/#faq" className="font-bold underline" />,
             }}
           />
         </InfoBox>
-        <InfoBox
-          type="info"
-          id="faq-info"
-          place="top"
-        >
+        <InfoBox type="info" id="faq-info" place="top">
           <Trans
             i18nKey="faq.tooltip.info"
             components={{
               LinkContact: (
-                <Link
-                  to="/contact"
-                  className="font-bold underline"
-                />
+                <Link to="/contact" className="font-bold underline" />
               ),
             }}
           />
@@ -92,10 +67,7 @@ const FAQ = () => {
                   />
                 ),
                 LinkContact: (
-                  <Link
-                    to="/contact"
-                    className="font-bold underline"
-                  />
+                  <Link to="/contact" className="font-bold underline" />
                 ),
                 i: <i />,
                 br: <br />,
@@ -107,7 +79,7 @@ const FAQ = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQ
+export default FAQ;
