@@ -1,23 +1,21 @@
-import { Link } from "react-router-dom"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-import iconClose from "../assets/iconClose.svg"
-import LogoLHS from "../assets/LHS_Badge_mitZusatz_sw_Print.png"
-import LogoTNC from "../assets/TNClogoPrimary_OU_CMYK_Europe.png"
+import iconClose from "../assets/iconClose.svg";
+import LogoLHS from "../assets/LHS_Badge_mitZusatz_sw_Print.png";
+import LogoTNC from "../assets/TNClogoPrimary_OU_CMYK_Europe.png";
 
 const Menu = ({ showMenu, hideMenu }) => {
-  if (!showMenu) return null
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+
+  if (!showMenu) return null;
 
   return (
     <nav className={`fixed flex items-start justify-between w-full z-50`}>
       <div className="h-[100dvh]">
         <ul className="fixed w-full flex flex-col items-center gap-0 px-10 py-6 text-2xl sm:text-5xl top-0 left-0 bg-white z-20 max-h-[100dvh] overflow-y-auto border-b-4 border-black">
           <li className="absolute top-3 right-1">
-            <button
-              onClick={hideMenu}
-              className="w-12 h-12"
-            >
+            <button onClick={hideMenu} className="w-12 h-12">
               <img src={iconClose} />
             </button>
           </li>
@@ -25,50 +23,22 @@ const Menu = ({ showMenu, hideMenu }) => {
             className="text-2xl sm:text-4xl py-5 sm:py-10"
             style={{ fontFamily: "Phase" }}
           >
-            <Link
-              to="/"
-              onClick={hideMenu}
-            >
+            <Link to="/" onClick={hideMenu}>
               Keingarten
             </Link>
           </li>
           <li className="mt-8 hover:underline">
-            <Link
-              to="/about"
-              onClick={hideMenu}
-            >
+            <Link to="/about" onClick={hideMenu}>
               {t("menu.about")}
             </Link>
           </li>
           <li className="mt-8 hover:underline">
-            <Link
-              to="/#registration"
-              onClick={hideMenu}
-            >
-              {t("menu.registration")}
-            </Link>
-          </li>
-          <li className="mt-8 hover:underline">
-            <Link
-              to="/#program"
-              onClick={hideMenu}
-            >
-              {t("menu.program")}
-            </Link>
-          </li>
-          <li className="mt-8 hover:underline">
-            <Link
-              to="/#faq"
-              onClick={hideMenu}
-            >
+            <Link to="/#faq" onClick={hideMenu}>
               {t("menu.faq")}
             </Link>
           </li>
           <li className="mt-8 hover:underline">
-            <Link
-              to="/contact"
-              onClick={hideMenu}
-            >
+            <Link to="/contact" onClick={hideMenu}>
               {t("menu.contact")}
             </Link>
           </li>
@@ -81,11 +51,7 @@ const Menu = ({ showMenu, hideMenu }) => {
               {t("menu.impressum")}
             </Link>
             /
-            <Link
-              to="/legal"
-              onClick={hideMenu}
-              className="hover:underline"
-            >
+            <Link to="/legal" onClick={hideMenu} className="hover:underline">
               {t("menu.legal")}
             </Link>
           </li>
@@ -120,7 +86,7 @@ const Menu = ({ showMenu, hideMenu }) => {
         ></div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
