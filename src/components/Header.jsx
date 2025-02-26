@@ -1,57 +1,54 @@
-import { useState, useRef, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
-import GardenStatus from "./GardenStatus"
-import WeatherWidget from "./WeatherWidget"
-import iconMenu from "../assets/iconMenu.svg"
-import IconSquare from "./IconSquare"
+import iconMenu from "../assets/iconMenu.svg";
 
 const Header = ({ handleMenuClick, onHeightChange }) => {
-  const headerRef = useRef(null)
-  const [scrollPosition, setScrollPosition] = useState(0)
+  const headerRef = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
     const scrollTop =
-      document.documentElement.scrollTop || document.body.scrollTop
+      document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight =
-      document.documentElement.scrollHeight || document.body.scrollHeight
-    const clientHeight = document.documentElement.clientHeight
-    const totalScroll = (scrollTop / (scrollHeight - clientHeight)) * 100
+      document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    const totalScroll = (scrollTop / (scrollHeight - clientHeight)) * 100;
 
-    setScrollPosition(totalScroll)
-  }
+    setScrollPosition(totalScroll);
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
-    const headerElement = headerRef.current
+    const headerElement = headerRef.current;
 
     const updateHeaderHeight = () => {
       if (headerElement) {
-        onHeightChange(headerElement.offsetHeight)
+        onHeightChange(headerElement.offsetHeight);
       }
-    }
+    };
     const resizeObserver = new ResizeObserver(() => {
-      updateHeaderHeight()
-    })
+      updateHeaderHeight();
+    });
     if (headerElement) {
-      resizeObserver.observe(headerElement)
+      resizeObserver.observe(headerElement);
     }
     // Initial measurement
-    updateHeaderHeight()
+    updateHeaderHeight();
 
     // Cleanup observer on unmount
     return () => {
       if (headerElement) {
-        resizeObserver.unobserve(headerElement)
+        resizeObserver.unobserve(headerElement);
       }
-    }
-  }, [onHeightChange]) // Include onHeightChange in the dependency array to ensure it's captured correctly
+    };
+  }, [onHeightChange]); // Include onHeightChange in the dependency array to ensure it's captured correctly
 
   return (
     <header
@@ -72,27 +69,13 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
       </div>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-32 justify-end items-end">
         <div className="flex justify-between mr-auto gap-6 lg:gap-32">
-          <Link
-            to="/images"
-            title="Image Gallery"
-            className="w-10 z-50"
-          >
-            <IconSquare />
-          </Link>
-          <button
-            className="w-10 z-50"
-            role="button"
-            onClick={handleMenuClick}
-          >
-            <img
-              src={iconMenu}
-              className="w-full"
-            />
+          <button className="w-10 z-50" role="button" onClick={handleMenuClick}>
+            <img src={iconMenu} className="w-full" />
           </button>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

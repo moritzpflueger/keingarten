@@ -1,23 +1,22 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-import "./index.css"
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import i18n from "i18next"
-import { initReactI18next } from "react-i18next"
-import translations from "./assets/translations.json"
+import i18n from "i18next";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { initReactI18next } from "react-i18next";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import translations from "./assets/translations.json";
+import "./index.css";
 
-import App from "./App.jsx"
-import Layout from "./Layout.jsx"
-import Imprint from "./components/Imprint"
-import LegalNotice from "./components/LegalNotice"
-import FAQ from "./components/FAQ"
-import About from "./components/About"
-import Registration from "./components/Registration"
-import Programme from "./components/Programme"
-import ImageView from "./components/ImageView"
-import Contact from "./components/Contact"
+import App from "./App.jsx";
+import Layout from "./Layout.jsx";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import FAQ from "./components/FAQ";
+import Imprint from "./components/Imprint";
+import LegalNotice from "./components/LegalNotice";
+import Programme from "./components/Programme";
+import Registration from "./components/Registration";
 
-i18n.use(initReactI18next).init(translations)
+i18n.use(initReactI18next).init(translations);
 
 const router = createBrowserRouter([
   {
@@ -49,10 +48,6 @@ const router = createBrowserRouter([
         element: <Programme />,
       },
       {
-        path: "/images",
-        element: <ImageView />,
-      },
-      {
         path: "/about",
         element: <About />,
       },
@@ -62,10 +57,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-])
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
-)
+);
