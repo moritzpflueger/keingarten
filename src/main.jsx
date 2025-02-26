@@ -13,9 +13,9 @@ import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
 import Imprint from "./components/Imprint";
 import LegalNotice from "./components/LegalNotice";
+import NewsletterConfirmation from "./components/NewsletterConfirmation";
 import Programme from "./components/Programme";
 import Registration from "./components/Registration";
-
 i18n.use(initReactI18next).init(translations);
 
 const router = createBrowserRouter([
@@ -54,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/welcome",
+        element: <NewsletterConfirmation />,
       },
     ],
   },

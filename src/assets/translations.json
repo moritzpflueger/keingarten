@@ -145,7 +145,12 @@
         "contact": {
           "title": "Contact"
         },
-        "title": "My name is Moritz"
+        "title": "My name is Moritz",
+        "confirmation": {
+          "title": "Confirmation",
+          "message": "Congratulations! You have successfully registered for our newsletter.",
+          "back": "Back to Home"
+        }
       }
     },
     "de": {
@@ -286,7 +291,12 @@
         "contact": {
           "title": "Kontakt"
         },
-        "title": "Mein Name ist Moritz"
+        "title": "Mein Name ist Moritz",
+        "confirmation": {
+          "title": "Bestätigung",
+          "message": "Herzlichen Glückwunsch! Du hast dich erfolgreich für unseren Newsletter registriert.",
+          "back": "Zurück zur Startseite"
+        }
       }
     }
   }
