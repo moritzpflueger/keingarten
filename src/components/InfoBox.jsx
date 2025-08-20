@@ -11,7 +11,7 @@ const InfoBox = ({ id, type, place, children }) => {
         place={place}
         clickable
         className="
-          !bg-[lime]
+          !bg-primary
           !opacity-100 
           !text-black
           !w-[calc(100vw-1rem)]

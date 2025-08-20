@@ -99,13 +99,13 @@ input[type="radio"] {
 }
 .react-datepicker__day--selected,
 .react-datepicker__day--in-range {
-  background-color: lime !important;
+  background-color: #588d3a !important;
   opacity: 1 !important;
   color: black !important;
 }
 
 .react-datepicker__day--keyboard-selected {
-  background-color: lime;
+  background-color: #588d3a;
   opacity: 0.5;
 }
 

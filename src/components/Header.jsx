@@ -56,7 +56,7 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
       className="fixed z-50 top-0 bg-white flex items-start lg:items-center justify-between p-5 border-b-4 border-black w-full"
     >
       <div
-        className="h-full top-0 left-0 absolute bg-[lime] mix-blend-multiply"
+        className="h-full top-0 left-0 absolute bg-primary mix-blend-multiply"
         style={{ width: `${scrollPosition}%` }}
       />
       <div className="w-full flex-1 flex flex-col lg:flex-row lg:items-center lg:gap-16">

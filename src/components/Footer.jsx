@@ -8,7 +8,7 @@ import LogoTNC from "../assets/TNClogoPrimary_OU_CMYK_Europe.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[lime] p-10 font-semibold flex flex-wrap justify-between items-center">
+    <footer className="bg-primary p-10 font-semibold flex flex-wrap justify-between items-center">
       {/* <div className="flex flex-col">
         <Link to={'/about'} className="hover:underline">{ t('menu.about') }</Link>
         <Link to={'/#registration'} className="hover:underline">{ t('menu.registration') }</Link>
