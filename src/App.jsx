@@ -4,6 +4,7 @@ import "./App.css";
 
 import FAQ from "./components/FAQ";
 import NewsletterTeaser from "./components/NewsletterTeaser";
+import Event from "./components/Event";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div>
+      <Event />
       <NewsletterTeaser />
       <FAQ />
     </div>
