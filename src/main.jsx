@@ -18,6 +18,8 @@ import Programme from "./components/Programme";
 import Registration from "./components/Registration";
 i18n.use(initReactI18next).init(translations);
 
+// hey moritz
+
 const router = createBrowserRouter([
   {
     path: "/",
